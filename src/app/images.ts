@@ -1,6 +1,8 @@
 import { Image } from './image';
 
 export const IMAGES: Image[] = [
-    { name: 'atitlan', path: '/Users/jonadiazz/Documents/one/images/atitlan.jpeg' },
-    { name: 'celaque', path: '/Users/jonadiazz/Documents/one/images/celaque.jpg' }
+    { name: 'celaque', path: '../../assets/items1.png' },
+    { name: 'celaque', path: '../../assets/celaque.JPG' },
+    { name: 'atitlan', path: '../../assets/atitlan.jpeg' },
+    { name: 'celaque', path: '../../assets/mixed-forest.png' },
 ];

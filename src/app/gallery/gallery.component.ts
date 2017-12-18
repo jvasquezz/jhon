@@ -18,8 +18,8 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelect(img: Image) {
+  onSelect(img: Image): void {
     this.selectedImage = img;
-    console.log(this.selectedImage);
+    console.log(this.selectedImage.path);
   }
 }
