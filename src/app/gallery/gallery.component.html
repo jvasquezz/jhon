@@ -1,0 +1,31 @@
+<div class="gallery">
+  <ul>
+    <li *ngFor="let img in images"
+    [class.selected]="img === selectedImage"
+    (click)="onSelect(img)">
+    <img [src]=img.path style="max-height:110px;">
+  </li>
+      <!-- <div class="card">
+        <div class="column">
+          <li [class.selected]="items1 === selectedImage" (click)="onSelect('items1')">
+            <img src= "../../assets/items1.png" alt="items1" style="max-height:110px;">
+          </li>
+        </div>
+      </div>
+      <div class="card">
+          <div class="column">
+            <li (click)="onSelect('celaque')"><img src= "../../assets/celaque.JPG" alt="celaque" style="max-height:110px;"></li>
+          </div>
+        </div>
+        <div class="card">
+            <div class="column">
+              <li (click)="onSelect('atitlan')"><img src= "../../assets/atitlan.jpeg" alt="atitlan" style="max-height:110px;"></li>
+            </div>
+          </div>
+          <div class="card">
+              <div class="column">
+                <li (click)="onSelect('mixed-forest')"><img src= "../../assets/mixed-forest.png"  alt="mixed-forest" style="max-height:110px;"></li>
+              </div>
+            </div> -->
+    </ul>
+</div>

@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    width: 84%;
+    margin-left: 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.introduction {
+    width: 92%;
+    margin-left: 4%;
+}
+p {
+    width: 98%;
+    margin-left: 1%;
+}

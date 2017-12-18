@@ -1,0 +1,9 @@
+<div class="social_sites">
+  <div>
+    <ul>
+      <li *ngFor="let site of social_sites">
+        <span class="links_sites"><a [href]="site.url" [class]="site.icon" style="text-decoration:none" target="_blank" aria-hidden="True"></a></span>
+      </li>
+    </ul>
+  </div>
+</div>

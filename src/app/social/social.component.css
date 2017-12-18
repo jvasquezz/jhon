@@ -1,0 +1,22 @@
+.social_sites li {
+    display: inline;
+    font-size: 150%;
+    padding: 6px;
+}
+.fa-linkedin {
+    color: white;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-quora {
+    color: white;
+}
+.social_sites div {
+    position: absolute;
+}
+.social_sites li:hover {
+    font-size: 250%;
+}
