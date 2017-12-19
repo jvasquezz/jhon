@@ -1,3 +1,8 @@
 /* .cover_image img:hover {
     transform: scaleX(-1);
 } */
+.myname {
+    font-style: oblique;
+    font-weight: bold;
+    color: darkslategray;
+}

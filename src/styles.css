@@ -5,7 +5,8 @@ body {
     /* width: 84%; */
     /* margin-left: 25%;
     margin-right: 25%; */
-    font-family: "Open Sans", Helvetica, sans-serif;
+    /* font-family: "Open Sans", Helvetica, sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
     -webkit-font-smoothing: antialiased;
     display: block;
     font-size: 16px;
@@ -13,23 +14,27 @@ body {
     box-sizing: border-box;
     color: rgb(51, 51, 51);
     float: left;
-    position: absolute;
+    position: relative;
 }
 li {
     padding-block-end: 10px;
 }
 .introduction {
-    /* text-align: right; */
+    text-align: left;
     background-color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     /* float: left; */
-    /* width: 70%; */
-    /* margin-left: 5%; */
+    width: 55%;
+    /* right: 15%; */
+    margin-left: 5%;
     /* font-style: italic; */
     color: gray;
 }
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* float: left; */
+    font-size: 15px;
+    padding-right: 20px;
     /* align-items: stretch; */
     /* word-wrap: break-word; */
     /* writing-mode: sideways-rl; */
@@ -48,12 +53,12 @@ a:hover {
     color: darkblue;
 }
 blockquote {
-    /* text-align: justify; */
+    text-align: right;
     background-color: #fff;
     color: #666;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: block;
-    position: relative;
+    /* position: relative; */
 }
 blockquote::before {
     content: "\201C";
@@ -62,14 +67,15 @@ blockquote::before {
 }
 .main_text {
     float: unset;
-    width: 720px;
-    /* -webkit-margin-collapse: collapse; */
+    width: 750px;
+    -webkit-margin-collapse: collapse;
     margin: 0 auto;
     /* margin-left: 25%;
     margin-right: 25%; */
     /* width: 90%; */
 }
 .main_container {
+    margin: 0 auto;
     background-color: #fff;
-    position: relative;
+    /* position: relative; */
 }
