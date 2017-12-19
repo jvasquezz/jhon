@@ -1,22 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    width: 84%;
-    margin-left: 8%;
-    font-size: large;
-    font-family: Helvetica, Arial, sans-serif
+    display: block;
+    /* background-color: #666; */
+    /* width: 84%; */
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    font-size: 16px;
+    align-content: center;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    position: absolute;
 }
 li {
     padding-block-end: 10px;
 }
 .introduction {
-    /* width: 92%;
-    margin-left: 4%; */
-    font-style: italic;
+    /* text-align: right; */
+    background-color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* float: left; */
+    /* width: 70%; */
+    /* margin-left: 5%; */
+    /* font-style: italic; */
     color: gray;
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* align-items: stretch; */
+    /* word-wrap: break-word; */
+    /* writing-mode: sideways-rl; */
+    /* width: 0; */
 }
 p {
     width: 98%;
     margin-left: 1%;
+    color: black;
 }
 a {
     text-decoration: none;
@@ -24,4 +46,30 @@ a {
 }
 a:hover {
     color: darkblue;
+}
+blockquote {
+    /* text-align: justify; */
+    background-color: #fff;
+    color: #666;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    position: relative;
+}
+blockquote::before {
+    content: "\201C";
+    font-weight: bold;
+    color: #999;
+}
+.main_text {
+    float: unset;
+    width: 720px;
+    /* -webkit-margin-collapse: collapse; */
+    margin: 0 auto;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    /* width: 90%; */
+}
+.main_container {
+    background-color: #fff;
+    position: relative;
 }
