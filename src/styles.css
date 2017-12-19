@@ -2,13 +2,26 @@
 body {
     width: 84%;
     margin-left: 8%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-size: large;
+    font-family: Helvetica, Arial, sans-serif
+}
+li {
+    padding-block-end: 10px;
 }
 .introduction {
-    width: 92%;
-    margin-left: 4%;
+    /* width: 92%;
+    margin-left: 4%; */
+    font-style: italic;
+    color: gray;
 }
 p {
     width: 98%;
     margin-left: 1%;
+}
+a {
+    text-decoration: none;
+    color: darkslateblue;
+}
+a:hover {
+    color: darkblue;
 }
