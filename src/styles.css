@@ -11,6 +11,7 @@ body {
     /* margin-left: 25%;
     margin-right: 25%; */
     /* font-family: "Open Sans", Helvetica, sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     -webkit-font-smoothing: antialiased;
     display: block;
@@ -29,8 +30,10 @@ li {
     font-size: 85%;
     background-color: rgb(239, 240, 241);
     -webkit-font-smoothing: antialiased;
-    /* font-family: Inconsolata, Consolas, Monaco, Courier; */
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-family: weston_freeregular; */
     font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono;
+    /* font-family: Inconsolata, Consolas, Monaco, Courier; */
     /* font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif; */
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* float: left; */
@@ -79,13 +82,12 @@ blockquote::before {
 }
 .main_text {
     float: unset;
-    width: 800px;
+    /* width: 800px; */
     -webkit-margin-collapse: collapse;
     margin: 0 auto;
     /* margin-left: 25%;
     margin-right: 25%; */
     /* width: 90%; */
-    
 }
 .main_container {
     margin: 0 auto;

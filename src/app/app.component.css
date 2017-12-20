@@ -1,6 +1,18 @@
 /* .cover_image img:hover {
     transform: scaleX(-1);
 } */
+.cover_image {
+    /* width: auto; */
+    /* max-width: 100%; */
+    /* margin: 0 auto; */
+    /* position: unset; */
+    /* -webkit-transform-style: preserve-3d; */
+}
+.cover_image img {
+    margin: 0 auto;
+    max-width: 100%;
+    /* style="max-width:100%" */
+}
 .myname {
     font-style: oblique;
     font-weight: bold;
@@ -29,7 +41,8 @@
     font-size: 20px;
     text-align: center;
     align-content: center;
-    font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono;
+    font-family: "Open Sans", sans-serif;
+    /* font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono; */
     /* background-color: wheat; */
 }
 .vote-down a {
@@ -56,7 +69,13 @@
     /* background-color: darkslategray; */
 }
 .intro {
-    width: 100%;
+    /* width: 100%; */
+    margin: 0 auto;
+    width: 800px;
+}
+.main_body_content {
+    margin: 0 auto;
+    width: 800px;
 }
 /* .code_intro {
     width: 100%;

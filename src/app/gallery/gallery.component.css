@@ -1,5 +1,6 @@
-.gallery div {
-    text-align: center;
+.gallery {
+    margin: 0 auto;
+    width: 800px;
 }
 .gallery li {
     list-style: none;
