@@ -6,3 +6,40 @@
     font-weight: bold;
     color: darkslategray;
 }
+.vote-up a {
+    /* font-size: 30px; */
+    color: gray;
+    /* background-color: green; */
+    padding-bottom: 3px;
+}
+.vote-up button {
+    font-size: 300%;
+    color: gray;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    /* align-items: center; */
+}
+.rating_votes {
+    color: rgb(155, 153, 153);
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono;
+    /* background-color: wheat; */
+}
+.vote-down a {
+    /* background-color: blue; */
+    /* font-size: 300%; */
+    /* color: gray; */
+}
+.vote-down button {
+    font-size: 300%;
+    color: gray;
+    /* padding-bottom: 3px; */
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    /* align-items: center; */
+}

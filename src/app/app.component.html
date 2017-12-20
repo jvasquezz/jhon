@@ -7,11 +7,30 @@
   <!-- <p style="text-align:center"><b>
       {{ name }}<br></b></p> -->
   <!-- <h3>{{ name }} {{ last }}</h3> -->
-  <p class="myname">{{ name }} {{ last }}</p>
-  <p class="introduction">
-        <i>'''</i><br>I'm a Full-stack developer in South Florida.<br>I write clean and reusable code, I focus on the user<br>and I am a persistent problem-solver. Also, I'm a jack<br>of all trades. <i>Here are some examples!<br><i>'''</i></i>
-  </p>
 </div>
+
+<table class="intro">
+  <tr>
+    <td class="vote">
+      <div class="vote-up">
+        <button (click)="addVoteUp()" class="fa fa-caret-up" style="text-decoration:none"></button></div>
+        <!-- <a class="fa fa-caret-up" style="text-decoration:none" aria-hidden="True"></a></div> -->
+      <div class="rating_votes">
+        <a style="text-decoration:none" aria-hidden="True">{{ votes }}</a></div>
+      <div class="vote-down">
+          <button class="fa fa-caret-down" style="text-decoration:none"></button></div>
+        <!-- <a class="fa fa-caret-down" style="text-decoration:none" aria-hidden="True"></a></div> -->
+    </td>
+    <td width="100%">
+      <div>
+        <p class="myname">{{ name }} {{ last }}</p>
+        <p class="introduction">
+            <i>'''</i><br>I'm a Full-stack developer in South Florida.<br>I write clean and reusable code, I focus on the user<br>and I am a persistent problem-solver. Also, I'm a jack<br>of all trades. <i>Here are some examples!<br><i>'''</i></i>
+        </p>
+      </div>
+    </td>
+  </tr>
+</table>
 
 <div>
   <div class="summary">
