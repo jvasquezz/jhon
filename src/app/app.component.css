@@ -21,6 +21,9 @@
     background-color: rgba(255, 255, 255, 0);
     /* align-items: center; */
 }
+.vote-up {
+    text-align: center;
+}
 .rating_votes {
     color: rgb(155, 153, 153);
     font-size: 20px;
@@ -35,6 +38,7 @@
     /* color: gray; */
 }
 .vote-down button {
+    text-align: center;
     font-size: 300%;
     color: gray;
     /* padding-bottom: 3px; */
@@ -43,3 +47,17 @@
     background-color: rgba(255, 255, 255, 0);
     /* align-items: center; */
 }
+.vote-down {
+    text-align: center;
+}
+.vote {
+    width: 10%;
+    margin: 0 auto;
+    /* background-color: darkslategray; */
+}
+.intro {
+    width: 100%;
+}
+/* .code_intro {
+    width: 100%;
+} */

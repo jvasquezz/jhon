@@ -14,8 +14,8 @@ export class AppComponent {
   //   this.votes = 0;
   // }
 
-  addVoteUp(): void {
-    this.votes = this.votes + 1;
+  castVote(castedVote): void {
+    this.votes = this.votes + castedVote;
     // console.log(this.votes);
   }
 }

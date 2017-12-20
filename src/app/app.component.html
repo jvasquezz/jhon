@@ -13,15 +13,13 @@
   <tr>
     <td class="vote">
       <div class="vote-up">
-        <button (click)="addVoteUp()" class="fa fa-caret-up" style="text-decoration:none"></button></div>
-        <!-- <a class="fa fa-caret-up" style="text-decoration:none" aria-hidden="True"></a></div> -->
+        <button (click)="castVote(1)" class="fa fa-caret-up" style="text-decoration:none"></button></div>
       <div class="rating_votes">
         <a style="text-decoration:none" aria-hidden="True">{{ votes }}</a></div>
       <div class="vote-down">
-          <button class="fa fa-caret-down" style="text-decoration:none"></button></div>
-        <!-- <a class="fa fa-caret-down" style="text-decoration:none" aria-hidden="True"></a></div> -->
+          <button (click)="castVote(-1)" class="fa fa-caret-down" style="text-decoration:none"></button></div>
     </td>
-    <td width="100%">
+    <td class="code_intro">
       <div>
         <p class="myname">{{ name }} {{ last }}</p>
         <p class="introduction">
