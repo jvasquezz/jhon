@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     display: block;
+    /* background-color: rgba(240, 241, 242, 0.082); */
+    background-color: rgba(240, 241, 242, 0.137);
+
+
+
     /* background-color: #666; */
     /* width: 84%; */
     /* margin-left: 25%;
@@ -21,14 +26,21 @@ li {
 }
 .introduction {
     text-align: left;
-    background-color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 85%;
+    background-color: rgb(239, 240, 241);
+    -webkit-font-smoothing: antialiased;
+    /* font-family: Inconsolata, Consolas, Monaco, Courier; */
+    font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono;
+    /* font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* float: left; */
-    width: 55%;
+    width: 90%;
     /* right: 15%; */
     margin-left: 5%;
+    padding-top: 5px;
+    /* padding-bottom: 1px; */
     /* font-style: italic; */
-    color: gray;
+    color: rgb(0, 0, 0);
 }
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,7 +66,7 @@ a:hover {
 }
 blockquote {
     text-align: right;
-    background-color: #fff;
+    /* background-color: #fff; */
     color: #666;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: block;
@@ -67,15 +79,19 @@ blockquote::before {
 }
 .main_text {
     float: unset;
-    width: 750px;
+    width: 800px;
     -webkit-margin-collapse: collapse;
     margin: 0 auto;
     /* margin-left: 25%;
     margin-right: 25%; */
     /* width: 90%; */
+    
 }
 .main_container {
     margin: 0 auto;
-    background-color: #fff;
+    /* background-color: rgb(240, 241, 242); */
+
+
+    /* background-color: #fff; */
     /* position: relative; */
 }

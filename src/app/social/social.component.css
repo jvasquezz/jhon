@@ -3,20 +3,73 @@
     font-size: 150%;
     padding: 6px;
 }
+.fa {
+    box-sizing: border-box;
+
+    width: 1em;
+    height: 1em;
+    /* float: right; */
+    /* display: inline-block; */
+    margin: 0 auto;
+    border: 3px dimgray;
+    /* background-position: center; */
+    /* top: -16px;
+    width: 50px;
+    height: 50px;
+    bottom: 0; */
+    /* position: absolute; */
+    /* right: 0; */
+    /* left: 0; */
+    color: rgb(77, 77, 77);
+    -webkit-font-smoothing: antialiased;
+    /* background-color: dimgray; */
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    /* color: rgba(248, 248, 255, 0.945); */
+}
 .fa-linkedin {
-    color: white;
+    /* color: white;
+    background-color: rgb(24, 24, 24);
+    */
 }
 
 .fa-github {
+    /* opacity: 0.1; */
+    /* background: transparent;
     color: white;
+    background-color: dimgray;
+    border-radius: 3px;
+    box-sizing: content-box; */
 }
-
+.fa-quora:hover {
+    /* color: rgb(77, 77, 77); */
+}
 .fa-quora {
-    color: white;
+    /* color: white;
+    background-color: rgb(24, 24, 24);
+    background-color: dimgray;
+    border-radius: 3px; */
+}
+span::before {
+    /* background: transparent; */
+}
+.social_sites::before{
+    /* background: transparent; */
 }
 .social_sites div {
-    position: absolute;
+    /* position: absolute; */
+}
+.fa:hover {
+    color: rgb(77, 77, 77);
+    opacity: .9;
 }
 .social_sites li:hover {
     font-size: 250%;
+}
+.top_navbar {
+    background-attachment: scroll;
+    /* background-color: rgb(63, 144, 196); */
+    transition-timing-function: ease-in-out, ease-in-out;
+    position: fixed;
+    /* float: left; */
 }
