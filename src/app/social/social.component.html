@@ -1,12 +1,9 @@
 <nav class="top_navbar">
-
-<div class="social_sites">
-  <div>
-    <ul>
-      <li *ngFor="let site of social_sites">
-        <span class="links_sites"><a [href]="site.url" [class]="site.icon" style="text-decoration:none" target="_blank" aria-hidden="True"></a></span>
-      </li>
-    </ul>
+  <div class="not_scrolled" [ngClass]= "{'page-scrolled': isScrolled}">
+    <div class="social_sites">
+      <ul class="social_icons">
+        <li *ngFor="let site of social_sites">
+            <span class="links_sites"><a [href]="site.url" [class]="site.icon" style="text-decoration:none" target="_blank" aria-hidden="True"></a></span></li></ul>
+    </div>
   </div>
-</div>
 </nav>

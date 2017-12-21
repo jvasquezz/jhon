@@ -77,6 +77,26 @@
     margin: 0 auto;
     width: 800px;
 }
+.code_intro {
+    text-align: left;
+    font-size: 85%;
+    background-color: rgb(239, 240, 241);
+    -webkit-font-smoothing: antialiased;
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-family: weston_freeregular; */
+    font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono;
+    /* font-family: Inconsolata, Consolas, Monaco, Courier; */
+    /* font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* float: left; */
+    width: 90%;
+    /* right: 15%; */
+    margin-left: 5%;
+    padding-top: 5px;
+    /* padding-bottom: 1px; */
+    /* font-style: italic; */
+    color: rgb(0, 0, 0);
+}
 /* .code_intro {
     width: 100%;
 } */
