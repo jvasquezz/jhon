@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Website } from '../website';
 import { SocialService } from '../social.service';
-// import { WEBSITES } from '../websites';
 
 @Component({
   selector: 'app-social',
@@ -21,17 +20,15 @@ export class SocialComponent implements OnInit {
   isScrolled = false;
   currPos: Number = 0;
   startPos: Number = 0;
-  changePos: Number = 50;
+  changePos: Number = 53;
 
   updateNavBar(evt) {
-    // console.log(this.currPos);
     this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
     if ( this.currPos >= this.changePos ) {
         this.isScrolled = true;
     } else {
         this.isScrolled = false;
     }
-    // console.log(this.isScrolled);
   }
 
   ngOnInit() {

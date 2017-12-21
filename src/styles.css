@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     display: block;
-    background-color: rgba(240, 241, 242, 0.137);
+    background-color: rgba(239, 241, 241, 0.137);
     font-family: Georgia, 'Times New Roman', Times, serif;
     -webkit-font-smoothing: antialiased;
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     align-content: center;
     box-sizing: border-box;
     color: rgb(51, 51, 51);
@@ -21,8 +21,8 @@ h3 {
     padding-right: 20px;
 }
 p {
-    width: 98%;
-    margin-left: 1%;
+    width: 97%;
+    margin-left: 1.5%;
     color: black;
 }
 a {

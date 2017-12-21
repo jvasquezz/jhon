@@ -12,49 +12,52 @@
     padding-bottom: 3px;
 }
 .vote-up button {
-    font-size: 300%;
+    font-size: 293%;
     color: gray;
     padding-bottom: 5px;
     cursor: pointer;
     border: none;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(251, 251, 251, 0);
 }
 .vote-up {
     text-align: center;
 }
+.rating_votes a {
+    color: gray;
+    font-weight: 400;
+}
 .rating_votes {
-    color: rgb(155, 153, 153);
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     align-content: center;
     font-family: "Open Sans", sans-serif;
 }
 .vote-down button {
     text-align: center;
-    font-size: 300%;
+    font-size: 293%;
     color: gray;
     cursor: pointer;
     border: none;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(251, 251, 251, 0);
 }
 .vote-down {
     text-align: center;
 }
 .vote {
-    width: 10%;
+    width: 11%;
     margin: 0 auto;
 }
 .intro {
     margin: 0 auto;
-    width: 800px;
+    width: 797px;
 }
 .main_body_content {
     margin: 0 auto;
-    width: 800px;
+    width: 797px;
 }
 .code_intro {
     text-align: left;
-    font-size: 85%;
+    font-size: 83%;
     background-color: rgb(239, 240, 241);
     -webkit-font-smoothing: antialiased;
     font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono;

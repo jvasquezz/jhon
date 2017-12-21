@@ -9,7 +9,7 @@ export class AppComponent {
   name = 'Jhonatan';
   last = 'Vasquez';
 
-  votes = 1000;
+  votes = 997;
 
   castVote(castedVote): void {
     this.votes = this.votes + castedVote;

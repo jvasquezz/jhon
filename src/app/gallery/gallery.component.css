@@ -1,12 +1,12 @@
 .gallery {
     margin: 0 auto;
-    width: 800px;
+    width: 797px;
 }
 .gallery li {
     list-style: none;
     display: inline;
-    filter: grayscale(95%);
-    filter: brightness(95%);
+    filter: grayscale(97%);
+    filter: brightness(97%);
 }
 .gallery li:hover {
     filter: grayscale(0%);
@@ -29,5 +29,5 @@
 }
 .gallery li.selected {
     filter: grayscale(100%);
-    filter: brightness(60%);
+    filter: brightness(61%);
 }
