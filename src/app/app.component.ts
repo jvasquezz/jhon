@@ -10,12 +10,8 @@ export class AppComponent {
   last = 'Vasquez';
 
   votes = 1000;
-  // ngOnInit() {
-  //   this.votes = 0;
-  // }
 
   castVote(castedVote): void {
     this.votes = this.votes + castedVote;
-    // console.log(this.votes);
   }
 }

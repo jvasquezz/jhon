@@ -7,33 +7,19 @@
     background-attachment: scroll;
     box-sizing: border-box;
     background-color: rgba(70, 87, 73, 0.9) !important;
-    /* background-color: rgba(77, 77, 77, 0.9) !important; */
-    /* background-color: rgba(245, 245, 245, 0.95) !important; */
-    /* position: fixed; */
-    /* transition: background-color 5s ease-in-out; */
     position: fixed;
 }
 .not_scrolled {
     transition: background-color 3s ease-in-out;
     background-attachment: scroll;
     box-sizing: border-box;
-    /* background-color: rgba(245, 245, 245, 0.473); */
     background-color: rgba(239, 240, 241, .05);
-    /* background-color: rgba(5, 5, 5, 0.144); */
-    /* transition: ease-in-out; */
     position: fixed;
     width: 100%;
 }
 .top_navbar {
     box-sizing: border-box;
-    /* transition: background-color 2s ease-out; */
     background-attachment: scroll;
-    /* margin-top: 6px; */
-    /* background-color: rgba(240, 241, 242, 0.205); */
-    /* background-color: rgba(240, 241, 242, 0.137); */
-    /* background-color: rgb(172, 174, 175); */
-    /* transition-timing-function: ease-in-out, ease-in-out; */
-    /* float: left; */
 }
 .social_sites li {
     display: inline;
@@ -47,69 +33,11 @@
     box-sizing: border-box;
     width: 1em;
     height: 1em;
-    /* float: right; */
-    /* display: inline-block; */
     margin: 0 auto;
     border: 3px dimgray;
-    /* background-position: center; */
-    /* top: -16px;
-    width: 50px;
-    height: 50px;
-    bottom: 0; */
-    /* position: absolute; */
-    /* right: 0; */
-    /* left: 0; */
     transition: color 1s ease-in-out;
     color: rgba(77, 77, 77, 0.9);
     -webkit-font-smoothing: antialiased;
-    /* background-color: dimgray; */
     background-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
-    /* color: rgba(248, 248, 255, 0.945); */
 }
-.fa-linkedin {
-    /* color: white;
-    background-color: rgb(24, 24, 24);
-    */
-}
-
-.fa-github {
-    /* opacity: 0.1; */
-    /* background: transparent;
-    color: white;
-    background-color: dimgray;
-    border-radius: 3px;
-    box-sizing: content-box; */
-}
-.fa-quora:hover {
-    /* color: rgb(77, 77, 77); */
-}
-.fa-quora {
-    /* color: white;
-    background-color: rgb(24, 24, 24);
-    background-color: dimgray;
-    border-radius: 3px; */
-}
-span::before {
-    /* background: transparent; */
-}
-.social_sites::before{
-    /* background: transparent; */
-}
-.social_icons {
-    /* margin-left: 5%; */
-    /* color: rgb(77, 77, 77);
-    font-size: 250%; */
-    /* position: absolute; */
-}
-/* .fa:hover {
-    color: rgb(77, 77, 77);
-    font-size: 250%;
-    opacity: .9;
-} */
-/* .social_sites li:hover {
-    font-size: 250%;
-} */
-/* li:hover {
-    font-size: 250%;
-} */

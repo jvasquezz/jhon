@@ -1,17 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     display: block;
-    /* background-color: rgba(240, 241, 242, 0.082); */
     background-color: rgba(240, 241, 242, 0.137);
-
-
-
-    /* background-color: #666; */
-    /* width: 84%; */
-    /* margin-left: 25%;
-    margin-right: 25%; */
-    /* font-family: "Open Sans", Helvetica, sans-serif; */
-    /* font-family: "Open Sans", sans-serif; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     -webkit-font-smoothing: antialiased;
     display: block;
@@ -27,13 +17,8 @@ li {
 }
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* float: left; */
     font-size: 15px;
     padding-right: 20px;
-    /* align-items: stretch; */
-    /* word-wrap: break-word; */
-    /* writing-mode: sideways-rl; */
-    /* width: 0; */
 }
 p {
     width: 98%;
@@ -43,18 +28,15 @@ p {
 a {
     text-decoration: none;
     color: chocolate;
-    /* color: darkslateblue; */
 }
 a:hover {
     color: darkblue;
 }
 blockquote {
     text-align: right;
-    /* background-color: #fff; */
     color: #666;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: block;
-    /* position: relative; */
 }
 blockquote::before {
     content: "\201C";
@@ -63,18 +45,9 @@ blockquote::before {
 }
 .main_text {
     float: unset;
-    /* width: 800px; */
     -webkit-margin-collapse: collapse;
     margin: 0 auto;
-    /* margin-left: 25%;
-    margin-right: 25%; */
-    /* width: 90%; */
 }
 .main_container {
     margin: 0 auto;
-    /* background-color: rgb(240, 241, 242); */
-
-
-    /* background-color: #fff; */
-    /* position: relative; */
 }
