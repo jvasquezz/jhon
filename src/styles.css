@@ -1,7 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+html, head, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: rgba(239, 241, 241, 0.137);
+}
 body {
     display: block;
-    background-color: rgba(239, 241, 241, 0.137);
     font-family: Georgia, 'Times New Roman', Times, serif;
     -webkit-font-smoothing: antialiased;
     display: block;
@@ -24,13 +32,29 @@ p {
     width: 97%;
     margin-left: 1.5%;
     color: black;
+    line-height: 25px;
 }
 a {
+    /* color: rgba(19, 25, 36, 0.9); */
+    /* color: chocolate; */
+    /* color: #062F4F; */
+    /* color: #B82601; */
+    /* color: #995236; */
+    /* color: #131722; */
+    /* color: #9c0808; */
+    /* text-decoration: none; */
     text-decoration: none;
-    color: chocolate;
+    /* color: rgb(78, 132, 150); */
+    color: rgb(21, 107, 136) !important;
+    font-weight: 500;
 }
 a:hover {
-    color: darkblue;
+    color: rgb(123, 145, 80) !important;
+    /* ff6642 1c2329 1e3044 ffffff e1e9f0 */
+    /* color: #CF6766; */
+    /* font-weight: bold; */
+    /* color: darkblue; */
+    /* color: rgba(19, 25, 36, 0.9); */
 }
 blockquote {
     text-align: right;
@@ -44,10 +68,23 @@ blockquote::before {
     color: #999;
 }
 .main_text {
-    float: unset;
+    /* float: unset; */
     -webkit-margin-collapse: collapse;
     margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 .main_container {
+    /* width: 100%; */
     margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.main_body_content {
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }

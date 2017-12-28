@@ -1,9 +1,25 @@
-<nav class="top_navbar">
+<nav class="top_navbar" *ngIf="innerWidth >= 719">
   <div class="not_scrolled" [ngClass]= "{'page-scrolled': isScrolled}">
     <div class="social_sites">
-      <ul class="social_icons">
+      <ul>
         <li *ngFor="let site of social_sites">
-            <span class="links_sites"><a [href]="site.url" [class]="site.icon" style="text-decoration:none" target="_blank" aria-hidden="True"></a></span></li></ul>
+            <span [class]="site.domain_name"><a [href]="site.url" [class]="site.icon" style="text-decoration:none" target="_blank" aria-hidden="True"></a></span></li></ul>
     </div>
   </div>
+  <div>
+    <div class="cover">
+      <img src="assets/pier.JPG" alt="Pier">
+    </div>
+  </div>
+</nav>
+
+<nav class="top_navbarMobile"  *ngIf="innerWidth < 719">
+  <expandable-list class="expandable">
+    <expandable-list-item>
+      <span title>☰</span>
+      <a item target="_blank" href={{social_sites[0].url}}>{{social_sites[0].domain_name}}</a>
+      <a item target="_blank" href={{social_sites[1].url}}>{{social_sites[1].domain_name}}</a>
+      <a item target="_blank" href={{social_sites[2].url}}>{{social_sites[2].domain_name}}</a>
+    </expandable-list-item>
+  </expandable-list>
 </nav>

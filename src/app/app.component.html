@@ -1,31 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-social></app-social>
-<div>
-  <div class="cover_image">
-    <img src="assets/pier.JPG" alt="Pier">
-  </div>
-</div>
 
-<table class="intro">
-  <tr>
-    <td class="vote">
-      <div class="vote-up">
-        <button (click)="castVote(1)" class="fa fa-caret-up" style="text-decoration:none"></button></div>
-      <div class="rating_votes">
-        <a style="text-decoration:none" aria-hidden="True">{{ votes }}</a></div>
-      <div class="vote-down">
-          <button (click)="castVote(-1)" class="fa fa-caret-down" style="text-decoration:none"></button></div>
-    </td>
-    <td class="intro">
-      <div>
-        <p class="myname">{{ name }} {{ last }}</p>
-        <p class="code_intro">
-            <i>'''</i><br>I'm a Full-stack developer in South Florida.<br>I write clean and reusable code, I focus on the user<br>and I am a persistent problem-solver. Also, I'm a jack<br>of all trades. <i>Here are some examples!<br><i>'''</i></i>
-        </p>
-      </div>
-    </td>
-  </tr>
-</table>
+<app-updates></app-updates>
 
 <div class="main_body_content">
   <div class="summary">
@@ -39,5 +15,5 @@
     <p>For my portfolio, I would like to bundle concepts used on some past interesting projects. All into one software application. Here in this page...</p>
   </div>
 </div>
-<app-gallery></app-gallery>
+<!-- <app-gallery></app-gallery> -->
 <!-- <app-android></app-android> -->

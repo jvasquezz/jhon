@@ -5,18 +5,23 @@ import { SocialService } from './social.service';
 import { AppComponent } from './app.component';
 import { SocialComponent } from './social/social.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { UpdatesComponent } from './updates/updates.component';
+import { UpdatesService } from './updates.service';
+import { ExpandableListModule } from 'angular2-expandable-list';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SocialComponent,
-    GalleryComponent
+    GalleryComponent,
+    UpdatesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ExpandableListModule,
   ],
-  providers: [SocialService],
+  providers: [SocialService, UpdatesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Website } from '../website';
 import { SocialService } from '../social.service';
 
@@ -20,7 +20,9 @@ export class SocialComponent implements OnInit {
   isScrolled = false;
   currPos: Number = 0;
   startPos: Number = 0;
-  changePos: Number = 53;
+  changePos: Number = 1;
+
+  innerWidth: Number;
 
   updateNavBar(evt) {
     this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
@@ -31,8 +33,14 @@ export class SocialComponent implements OnInit {
     }
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
+  }
+
   ngOnInit() {
     this.getWebsites();
+    this.innerWidth = window.innerWidth;
   }
 
   getWebsites(): void {

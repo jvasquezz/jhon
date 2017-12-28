@@ -1,43 +1,88 @@
 .page-scrolled .fa {
-    color: rgba(216, 217, 218, 0.9) !important;
+    /* color: rgba(255, 255, 255, 0.9); */
+    color: rgba(239, 241, 241, 0.733) !important;
     transition: color 1s ease-in-out;
     cursor: pointer;
 }
 .page-scrolled {
     background-attachment: scroll;
     box-sizing: border-box;
-    background-color: rgba(70, 87, 73, 0.9) !important;
+    /* INK : #062F4F POSY 813772*/
+    /* indigo: #30415D */
+    /* background-color: rgba(19, 25, 36, 0.95) !important; */
+    /* background-color: #6C648B; */
+    /* background-color: #393d40 !important; */
+    /* background-color: #22264b !important; */
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    /* background-color: rgba(0, 0, 0, 0.95) !important; */
     position: fixed;
 }
 .not_scrolled {
-    transition: background-color 3s ease-in-out;
+    transition: background-color 1s ease-in-out;
     background-attachment: scroll;
     box-sizing: border-box;
-    background-color: rgba(239, 240, 241, .05);
+    /* background-color: #e1e9f0; */
     position: fixed;
     width: 100%;
 }
-.top_navbar {
-    box-sizing: border-box;
-    background-attachment: scroll;
+.top_navbar, .top_navbarMobile {
+    /* box-sizing: border-box; */
+    /* background-attachment: scroll; */
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.top_navbarMobile ul {
+    list-style: none;
+    list-style-image: none;
+    list-style-type: georgian;
 }
 .social_sites li {
     display: inline;
-    font-size: 167%;
-    padding: 5px;
+    font-size: 120%;
+    padding: 4px;
 }
-.social_sites li:hover {
-    font-size: 250%;
+.fa-linkedin:hover {
+    color: #0077b5 !important;
+    transition: color 0s ease-in-out !important;
+    font-size: 110% !important;
+}
+.fa-github:hover {
+    color: #6e5494 !important;
+    transition: color 0s ease-in-out !important;
+    font-size: 110% !important;
+}
+.fa-quora:hover {
+    font-size: 100% !important;
+    color:  #a82400 !important;
+    transition: color 0s ease-in-out !important;
+}
+.fa-quora {
+    font-size: 90%;
 }
 .fa {
     box-sizing: border-box;
     width: 1em;
     height: 1em;
     margin: 0 auto;
-    border: 3px dimgray;
+    border: 5px black;
     transition: color 1s ease-in-out;
-    color: rgba(77, 77, 77, 0.9);
+    /* color: rgb(255, 153, 0, 0.9); */
+    color: rgba(0, 0, 0, 0.9) !important;
+    /* color: rgba(77, 77, 77, 0.9); */
     -webkit-font-smoothing: antialiased;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 2px;
+}
+.cover img {
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.expandable expandable-list-item {
+    list-style: none;
+    text-decoration: none;
+    background-color: rgba(239, 241, 241, 0.137);
 }
