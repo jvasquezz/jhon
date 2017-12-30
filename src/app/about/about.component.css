@@ -1,0 +1,12 @@
+.main_body_content div.summary {
+    width: 707px;
+    float: left;
+}
+.mbc div.summary {
+    width: 719px;
+    overflow: hidden;
+}
+div.summary {
+    width: 707px;
+    /* float: left; */
+}

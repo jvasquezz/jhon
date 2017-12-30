@@ -60,11 +60,11 @@
 .main_body_content div.sidebar {
     margin-left: 719px;
 }
-.main_body_content div.summary {
+.main_body_content div.content {
     width: 707px;
     float: left;
 }
-.mbc div.summary {
+.mbc div.content {
     width: 719px;
     overflow: hidden;
 }

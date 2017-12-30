@@ -9,6 +9,9 @@ import { UpdatesComponent } from './updates/updates.component';
 import { UpdatesService } from './updates.service';
 import { ExpandableListModule } from 'angular2-expandable-list';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -17,11 +20,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     SocialComponent,
     GalleryComponent,
     UpdatesComponent,
-    SidebarComponent
+    SidebarComponent,
+    PortfolioComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     ExpandableListModule,
+    AppRoutingModule,
   ],
   providers: [SocialService, UpdatesService],
   bootstrap: [AppComponent]
