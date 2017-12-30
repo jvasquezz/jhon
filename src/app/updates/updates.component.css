@@ -20,7 +20,8 @@ li {
     border-left-color: #9cbb62;
 }
 div.current {
-    width: 969px;
+    /* width: 969px; */
+    width: 707px;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 30px;

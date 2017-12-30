@@ -1,9 +1,21 @@
-<nav class="top_navbar" *ngIf="innerWidth >= 719">
-  <div class="not_scrolled" [ngClass]= "{'page-scrolled': isScrolled}">
+<nav class="navbar-fixed-top" *ngIf="innerWidth >= 719">
+  <div class="not-scrolled" [ngClass]= "{'page-scrolled': isScrolled}">
     <div class="social_sites">
-      <ul>
-        <li *ngFor="let site of social_sites">
+      <div>
+        <ul>
+          <li *ngFor="let site of social_sites">
             <span [class]="site.domain_name"><a [href]="site.url" [class]="site.icon" style="text-decoration:none" target="_blank" aria-hidden="True"></a></span></li></ul>
+      </div>
+    </div>
+    <div class="profile">
+        <!-- <img src="assets/jv4.png" alt="profile"> -->
+        <div class="breadcrumbs">
+            <ul style="list-style:none">
+                <li><a routerLink="/about" routerLinkActive="active">About /</a></li>
+                <li><a routerLink="/gallery" routerLinkActive="active">Gallery /</a></li>
+                <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+            </ul>
+        </div>
     </div>
   </div>
   <div>
@@ -13,7 +25,7 @@
   </div>
 </nav>
 
-<nav class="top_navbarMobile"  *ngIf="innerWidth < 719">
+<nav class="navbar-fixed-top-mobile"  *ngIf="innerWidth < 719">
   <expandable-list class="expandable">
     <expandable-list-item>
       <span title>☰</span>

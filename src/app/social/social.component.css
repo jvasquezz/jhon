@@ -1,5 +1,23 @@
-.page-scrolled .fa {
-    /* color: rgba(255, 255, 255, 0.9); */
+.page-scrolled div.breadcrumbs a:hover {
+    font-weight: bolder !important;
+}
+.not-scrolled div.breadcrumbs a.active {
+    color: rgb(92, 109, 59) !important;
+    font-weight: bolder !important;
+}
+.page-scrolled div.breadcrumbs a.active {
+    font-weight: bolder !important;
+    color: rgb(123, 145, 80) !important;
+}
+.not-scrolled div.breadcrumbs a:hover {
+    color: rgb(123, 145, 80) !important;
+    font-weight: bolder !important;
+}
+.not-scrolled div.breadcrumbs a {
+    transition: color 1s ease-in-out;
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+.page-scrolled .fa, .page-scrolled div.breadcrumbs a {
     color: rgba(239, 241, 241, 0.733) !important;
     transition: color 1s ease-in-out;
     cursor: pointer;
@@ -16,8 +34,9 @@
     background-color: rgba(0, 0, 0, 0.9) !important;
     /* background-color: rgba(0, 0, 0, 0.95) !important; */
     position: fixed;
+    top: 0px;
 }
-.not_scrolled {
+.not-scrolled {
     transition: background-color 1s ease-in-out;
     background-attachment: scroll;
     box-sizing: border-box;
@@ -25,28 +44,41 @@
     position: fixed;
     width: 100%;
 }
-.top_navbar, .top_navbarMobile {
+nav {
+    top: 0;
+}
+.navbar-fixed-top, .navbar-fixed-top-mobile {
     /* box-sizing: border-box; */
     /* background-attachment: scroll; */
     margin: 0 auto;
     max-width: 100%;
     width: auto;
     height: auto;
+    top: 0px;
 }
-.top_navbarMobile ul {
+.navbar-fixed-top-mobile ul {
     list-style: none;
     list-style-image: none;
     list-style-type: georgian;
 }
+.social_sites ul {
+    margin-bottom: 0px;
+}
+.breadcrumbs ul {
+    margin-top: 10px;
+    /* background-color: red !important; */
+    /* vertical-align: top; */
+}
 .social_sites li {
     display: inline;
-    font-size: 120%;
+    font-size: 115%;
     padding: 4px;
 }
+
 .fa-linkedin:hover {
     color: #0077b5 !important;
     transition: color 0s ease-in-out !important;
-    font-size: 110% !important;
+    font-size: 115% !important;
 }
 .fa-github:hover {
     color: #6e5494 !important;
@@ -54,26 +86,35 @@
     font-size: 110% !important;
 }
 .fa-quora:hover {
-    font-size: 100% !important;
+    font-size: 105% !important;
     color:  #a82400 !important;
     transition: color 0s ease-in-out !important;
 }
+.fa-stack-overflow:hover {
+    font-size: 110% !important;
+    color: #f48024 !important;
+    transition: color 0s ease-in-out !important;
+}
 .fa-quora {
+    font-size: 85%;
+}
+.fa-linkedin {
+    font-size: 105%;
+}
+.fa-stack-overflow {
     font-size: 90%;
 }
 .fa {
-    box-sizing: border-box;
-    width: 1em;
+    width: .8em;
     height: 1em;
     margin: 0 auto;
+    border-radius: 2px;
     border: 5px black;
+    box-sizing: border-box;
     transition: color 1s ease-in-out;
-    /* color: rgb(255, 153, 0, 0.9); */
-    color: rgba(0, 0, 0, 0.9) !important;
-    /* color: rgba(77, 77, 77, 0.9); */
     -webkit-font-smoothing: antialiased;
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.9) !important;
 }
 .cover img {
     margin: 0 auto;
@@ -85,4 +126,53 @@
     list-style: none;
     text-decoration: none;
     background-color: rgba(239, 241, 241, 0.137);
+}
+
+div.breadcrumbs {
+    /* font-size: 14.4px !important; */
+    font-family: "Droid Serif";
+}
+div.breadcrumbs br {
+    /* display: block; */
+    /* margin-bottom: 40px; */
+}
+/* div.breadcrumbs a { */
+    /* padding-left: 7px; */
+    /* padding-bottom: 50px; */
+    /* height: 50px; */
+    /* font-weight: bolder !important; */
+/* } */
+
+div.breadcrumbs ul {
+    /* padding: 0px; */
+    /* line-height: 1.4em; */
+}
+div.breadcrumbs li {
+    display: inline;
+}
+
+.profile img {
+    max-width: 35%;
+    border-radius: 50%;
+}
+.page-scrolled {
+    /* width: 900px; */
+}
+.page-scrolled, .not-scrolled {
+    text-align: center;
+}
+.page-scrolled ul, .not-scrolled ul {
+    position: relative;
+    left: -4%;
+}
+.page-scrolled .social_sites div, .not-scrolled .social_sites div {
+    /* float: right; */
+    /* width: 200px; */
+    /* text-align: center; */
+}
+.page-scrolled .profile div, .not-scrolled .profile div {
+    /* margin-left: 50px; */
+    /* width: 200px; */
+    /* float: left; */
+    /* text-align: center; */
 }
