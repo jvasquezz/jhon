@@ -8,6 +8,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { UpdatesComponent } from './updates/updates.component';
 import { UpdatesService } from './updates.service';
 import { ExpandableListModule } from 'angular2-expandable-list';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ExpandableListModule } from 'angular2-expandable-list';
     AppComponent,
     SocialComponent,
     GalleryComponent,
-    UpdatesComponent
+    UpdatesComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

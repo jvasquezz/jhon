@@ -1,9 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-social></app-social>
 
-<app-updates></app-updates>
-
-<div class="main_body_content">
+<div [ngClass]="innerWidth > 1019? 'main_body_content' : 'mbc'">
+  <app-updates></app-updates>
   <div class="summary">
     <p>I had the opportunity to work on machine vision over a year in a research lab and working for a startup company. I developed machine vision applications using <a href="https://opencv.org" target="_blank">OpenCV</a> (the best machine vision libray). This required testing and prototyping in different OpenCV supported languages i.e. Python <i>(for prototyping)</i>, C++ <i>(for real-time apps)</i> and even on C# <a href="http://www.emgu.com/wiki/index.php/Main_Page" target="_blank">EmguCV wrapper </a><i>(to speed up deployment)</i>.  I helped in automating decision making of <a href="https://www.youtube.com/watch?v=ZDuRsJhsBzI&index=1&list=PLkw9ZPH81_mUwwA16M0-bPVHly86tCUxj" target="_blank">an autonomous colonoscopy robot</a>. Also, I made the backbone of a detection and tracking<a href="http://www.indaflow.com" target="_blank"> software application</a>.
     </p>
@@ -14,6 +13,10 @@
     <p>Video game development is all about user experience. If a user is not satistied with a video game, there is no need to keep using it <i>(Why would you/anyone?)</i> As a developer, I implemented <a href="https://www.icloud.com/keynote/0k9laH0dfAC5UtHhcP68tBDyA#Game_Analytics_for_Developers" target="_blank">Analytics</a> and incorporated different tools into the app to measure user experience <i>(to measure <b>fun?!</b> in this case)</i>. For example, <i>heat maps</i>, <i>funnels</i> to narrow down where user starts to disengage and <i>segmentation</i> to categorize user base.</p>
     <p>For my portfolio, I would like to bundle concepts used on some past interesting projects. All into one software application. Here in this page...</p>
   </div>
+  <div *ngIf="innerWidth > 1019" class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+
 </div>
 <!-- <app-gallery></app-gallery> -->
 <!-- <app-android></app-android> -->
