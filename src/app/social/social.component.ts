@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Website } from '../website';
-import { SocialService } from '../social.service';
+import { SocialService } from '../services/social.service';
 
 @Component({
   selector: 'app-social',

@@ -1,0 +1,6 @@
+<h4>My reading list</h4>
+<ul>
+  <li *ngFor="let read of readings">
+    <span [class]="read.article"><a [href]="read.url" target="_blank" aria-hidden="True">{{ read.article }}</a></span>
+  </li>
+</ul>

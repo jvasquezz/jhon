@@ -8,7 +8,6 @@
       </div>
     </div>
     <div class="profile">
-        <!-- <img src="assets/jv4.png" alt="profile"> -->
         <div class="breadcrumbs">
             <ul style="list-style:none">
                 <li><a routerLink="/about" routerLinkActive="active">About /</a></li>
@@ -26,12 +25,14 @@
 </nav>
 
 <nav class="navbar-fixed-top-mobile"  *ngIf="innerWidth < 719">
+  <img class="profile-img" src="assets/jv4.png" alt="profile">
   <expandable-list class="expandable">
-    <expandable-list-item>
-      <span title>☰</span>
-      <a item target="_blank" href={{social_sites[0].url}}>{{social_sites[0].domain_name}}</a>
-      <a item target="_blank" href={{social_sites[1].url}}>{{social_sites[1].domain_name}}</a>
-      <a item target="_blank" href={{social_sites[2].url}}>{{social_sites[2].domain_name}}</a>
+    <expandable-list-item [isExpanded]="true">
+      <span title>_</span>
+      <span secondary>‗‗</span>
+      <a item href="/about" routerLinkActive="active">About</a>
+      <a item href="/gallery" routerLinkActive="active">Gallery</a>
+      <a item href="/portfolio" routerLinkActive="active">Portfolio</a>
     </expandable-list-item>
   </expandable-list>
 </nav>

@@ -25,24 +25,16 @@
 .page-scrolled {
     background-attachment: scroll;
     box-sizing: border-box;
-    /* INK : #062F4F POSY 813772*/
-    /* indigo: #30415D */
-    /* background-color: rgba(19, 25, 36, 0.95) !important; */
-    /* background-color: #6C648B; */
-    /* background-color: #393d40 !important; */
-    /* background-color: #22264b !important; */
     background-color: rgba(0, 0, 0, 0.9) !important;
-    /* background-color: rgba(0, 0, 0, 0.95) !important; */
     position: fixed;
-    top: 0px;
 }
 .not-scrolled {
     transition: background-color 1s ease-in-out;
     background-attachment: scroll;
     box-sizing: border-box;
-    /* background-color: #e1e9f0; */
     position: fixed;
     width: 100%;
+    top: -0.5%;
 }
 nav {
     top: 0;
@@ -50,11 +42,13 @@ nav {
 .navbar-fixed-top, .navbar-fixed-top-mobile {
     /* box-sizing: border-box; */
     /* background-attachment: scroll; */
+    /* margin-bottom: -100%; */
     margin: 0 auto;
     max-width: 100%;
     width: auto;
     height: auto;
     top: 0px;
+    text-align: center;
 }
 .navbar-fixed-top-mobile ul {
     list-style: none;
@@ -123,9 +117,14 @@ nav {
     height: auto;
 }
 .expandable expandable-list-item {
+    /* margin-left: -10%; */
+    width: 100%;
     list-style: none;
     text-decoration: none;
     background-color: rgba(239, 241, 241, 0.137);
+}
+.expandable expandable-list {
+    text-align: center;
 }
 
 div.breadcrumbs {
@@ -151,8 +150,8 @@ div.breadcrumbs li {
     display: inline;
 }
 
-.profile img {
-    max-width: 35%;
+.profile-img {
+    max-width: 25%;
     border-radius: 50%;
 }
 .page-scrolled {

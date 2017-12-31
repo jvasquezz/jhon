@@ -9,9 +9,9 @@ div.hyperlinks, div.glossary, {
     font-size: 13px;
     text-align: justify;
 }
-div.sidebarDiv h4 {
+h4 {
     padding-left: 7px;
-
+    margin-bottom: 1em;
 }
 div.glossary {
     border-radius: 3px;
@@ -23,7 +23,4 @@ div.glossary {
     margin: 0 auto;
     width: 99%;
     height: auto;
-}
-.sidebarDiv {
-    /* position: fixed; */
 }

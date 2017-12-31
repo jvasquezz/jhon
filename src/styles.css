@@ -5,6 +5,11 @@ html, head, body
     height: 100%;
     margin: 0px;
     padding: 0px;
+    /* position: fixed !important; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(239, 241, 241, 0.137);
