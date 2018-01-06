@@ -56,10 +56,11 @@ nav {
     list-style-type: georgian;
 }
 .social_sites ul {
-    margin-bottom: 0px;
+    margin-bottom: -5px;
 }
 .breadcrumbs ul {
     margin-top: 10px;
+    margin-bottom: 1%;
     /* background-color: red !important; */
     /* vertical-align: top; */
 }

@@ -58,15 +58,30 @@ blockquote::before {
     font-weight: bold;
     color: #999;
 }
-.main_text {
+.main {
     -webkit-margin-collapse: collapse;
     margin: 0 auto;
     max-width: 100%;
     width: auto;
     height: auto;
 }
-.main_container {
+.main-container {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+#discussion {
+    margin: 0 auto !important;
+    width: 969px;
+}
+#gist, #disqus_thread {
+    /* margin: 0 auto !important; */
+    /* width: 707px; */
+    padding-left: 1%;
+    max-width: 100%;
+    /* float: left; */
+    height: auto;
+    overflow: hidden;
+    max-width: 685px;
+    align-content: left !important;
 }

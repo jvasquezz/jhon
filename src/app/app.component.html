@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-social></app-social>
 
-<div [ngClass]="innerWidth > 1019? 'main_body_content' : 'mbc'">
+<div [ngClass]="innerWidth > 1019? 'main-content-body' : 'main-content-narrow'">
 
   <!-- <app-about></app-about> -->
   <div class="content">
@@ -10,8 +10,7 @@
   </div>
 
   <div *ngIf="innerWidth > 1019" class="sidebar">
-    <app-sidebar>
-    </app-sidebar>
+    <app-sidebar></app-sidebar>
   </div>
 
 </div>

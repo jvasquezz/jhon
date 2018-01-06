@@ -8,6 +8,8 @@ div.hyperlinks, div.glossary, {
 .sidebarDiv {
     font-size: 13px;
     text-align: justify;
+    max-width: 100%;
+    width: 250px;
 }
 h4 {
     padding-left: 7px;
@@ -16,6 +18,10 @@ h4 {
 div.glossary {
     border-radius: 3px;
     border: 1px solid #d6d9dc;
+}
+iframe {
+    max-width: 99%;
+    height: 20%;
 }
 .side_img {
     border-radius: 3px;

@@ -25,7 +25,7 @@ import { ReadingService } from './services/reading.service';
     SidebarComponent,
     PortfolioComponent,
     AboutComponent,
-    ReadingComponent
+    ReadingComponent,
   ],
   imports: [
     BrowserModule,

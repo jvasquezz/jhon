@@ -1,9 +1,9 @@
-.main_body_content div.summary {
-    width: 707px;
+.main-content-body div.summary {
+    max-width: 707px;
     float: left;
 }
-.mbc div.summary {
-    width: 719px;
+.main-content-narrow div.summary {
+    max-width: 719px;
     overflow: hidden;
 }
 div.summary {
