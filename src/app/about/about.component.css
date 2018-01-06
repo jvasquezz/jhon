@@ -7,6 +7,5 @@
     overflow: hidden;
 }
 div.summary {
-    width: 707px;
-    /* float: left; */
+    max-width: 707px;
 }

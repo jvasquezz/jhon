@@ -40,9 +40,6 @@ nav {
     top: 0;
 }
 .navbar-fixed-top, .navbar-fixed-top-mobile {
-    /* box-sizing: border-box; */
-    /* background-attachment: scroll; */
-    /* margin-bottom: -100%; */
     margin: 0 auto;
     max-width: 100%;
     width: auto;
@@ -61,19 +58,20 @@ nav {
 .breadcrumbs ul {
     margin-top: 10px;
     margin-bottom: 1%;
-    /* background-color: red !important; */
-    /* vertical-align: top; */
 }
 .social_sites li {
     display: inline;
     font-size: 115%;
     padding: 4px;
 }
-
 .fa-linkedin:hover {
     color: #0077b5 !important;
     transition: color 0s ease-in-out !important;
     font-size: 115% !important;
+}
+.fa-angellist:hover {
+    font-size: 115% !important;
+    transition: color 0s ease-in-out !important;
 }
 .fa-github:hover {
     color: #6e5494 !important;
@@ -118,8 +116,7 @@ nav {
     height: auto;
 }
 .expandable expandable-list-item {
-    /* margin-left: -10%; */
-    width: 100%;
+    max-width: 100%;
     list-style: none;
     text-decoration: none;
     background-color: rgba(239, 241, 241, 0.137);
@@ -129,23 +126,7 @@ nav {
 }
 
 div.breadcrumbs {
-    /* font-size: 14.4px !important; */
     font-family: "Droid Serif";
-}
-div.breadcrumbs br {
-    /* display: block; */
-    /* margin-bottom: 40px; */
-}
-/* div.breadcrumbs a { */
-    /* padding-left: 7px; */
-    /* padding-bottom: 50px; */
-    /* height: 50px; */
-    /* font-weight: bolder !important; */
-/* } */
-
-div.breadcrumbs ul {
-    /* padding: 0px; */
-    /* line-height: 1.4em; */
 }
 div.breadcrumbs li {
     display: inline;
@@ -155,24 +136,10 @@ div.breadcrumbs li {
     max-width: 25%;
     border-radius: 50%;
 }
-.page-scrolled {
-    /* width: 900px; */
-}
 .page-scrolled, .not-scrolled {
     text-align: center;
 }
 .page-scrolled ul, .not-scrolled ul {
     position: relative;
     left: -4%;
-}
-.page-scrolled .social_sites div, .not-scrolled .social_sites div {
-    /* float: right; */
-    /* width: 200px; */
-    /* text-align: center; */
-}
-.page-scrolled .profile div, .not-scrolled .profile div {
-    /* margin-left: 50px; */
-    /* width: 200px; */
-    /* float: left; */
-    /* text-align: center; */
 }
