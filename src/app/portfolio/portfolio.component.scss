@@ -1,0 +1,44 @@
+@import "~styles/mixins";
+
+.portfolio html {
+    padding-left: 100px;
+}
+#source-codes {
+    color: $jv-palette-black-30;
+    text-align: right;
+}
+#source-codes a:hover {
+    color: $jv-green-links !important;
+    font-weight: 600;
+}
+#source-codes {
+    padding: 20px 10px;
+    text-align: left;
+}
+#source-codes th {
+    @include consolas-medium;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    min-width: 200px;
+}
+#source-codes th:nth-child(even) a {
+    color: $jv-palette-blue-90;
+    font-weight: bolder;
+}
+#source-codes th:nth-child(odd) a {
+    color: $jv-palette-blue-50;
+    font-weight: bolder;
+}
+
+img {
+    @include send-abyss(absolute);
+    padding: 5px;
+}
+span {
+    color: $jv-palette-blue-70 !important;
+}
+#guide {
+    @include send-abyss(absolute);
+    padding-left: 90px;
+    padding-top: 35px;
+}

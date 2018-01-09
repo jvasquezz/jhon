@@ -1,3 +1,5 @@
+@import "~styles/mixins";
+
 .page-scrolled div.breadcrumbs a:hover {
     font-weight: bolder !important;
 }
@@ -18,7 +20,7 @@
     color: rgba(0, 0, 0, 0.9) !important;
 }
 .page-scrolled .fa, .page-scrolled div.breadcrumbs a {
-    color: rgba(239, 241, 241, 0.733) !important;
+    color: $jv-white-transparent-70 !important;
     transition: color 1s ease-in-out;
     cursor: pointer;
 }
@@ -26,7 +28,7 @@
     background-attachment: scroll;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.9) !important;
-    position: fixed;
+    @include bring-foreground(fixed);
 }
 .not-scrolled {
     transition: background-color 1s ease-in-out;
@@ -66,26 +68,29 @@ nav {
 }
 .fa-linkedin:hover {
     color: #0077b5 !important;
-    transition: color 0s ease-in-out !important;
+    @extend %smooth-transition;
     font-size: 115% !important;
 }
 .fa-angellist:hover {
     font-size: 115% !important;
-    transition: color 0s ease-in-out !important;
+    @extend %smooth-transition;
 }
 .fa-github:hover {
     color: #6e5494 !important;
-    transition: color 0s ease-in-out !important;
+    @extend %smooth-transition;
     font-size: 110% !important;
 }
 .fa-quora:hover {
     font-size: 105% !important;
     color:  #a82400 !important;
-    transition: color 0s ease-in-out !important;
+    @extend %smooth-transition;
 }
 .fa-stack-overflow:hover {
     font-size: 110% !important;
     color: #f48024 !important;
+    @extend %smooth-transition;
+}
+%smooth-transition {
     transition: color 0s ease-in-out !important;
 }
 .fa-quora {

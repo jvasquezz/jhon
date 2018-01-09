@@ -1,0 +1,12 @@
+@mixin send-back($pos) {
+    z-index: 0;
+    position: $pos;
+}
+@mixin bring-foreground($pos) {
+    z-index: 1;
+    position: $pos;
+}
+@mixin send-abyss($pos) {
+    z-index: -1;
+    position: $pos;
+}

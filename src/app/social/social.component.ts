@@ -5,7 +5,7 @@ import { SocialService } from '../services/social.service';
 @Component({
   selector: 'app-social',
   templateUrl: './social.component.html',
-  styleUrls: ['./social.component.css'],
+  styleUrls: ['./social.component.scss'],
   // tslint:disable-next-line:use-host-property-decorator
   host: {
     '(window:scroll)': 'updateNavBar($event)'

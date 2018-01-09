@@ -1,0 +1,12 @@
+@mixin consolas-medium {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 14px;
+}
+@mixin inconsolata-medium {
+    font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono;
+    font-size: 81%;
+}
+@mixin serif {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $jv-white-transparent-15 !important;
+}

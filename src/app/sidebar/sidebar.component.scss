@@ -1,3 +1,5 @@
+@import "~styles/mixins";
+
 div.hyperlinks, div.glossary, {
     padding-left: 7px;
     margin-bottom: 7px;
@@ -9,6 +11,7 @@ div.hyperlinks, div.glossary, {
     text-align: justify;
     max-width: 100%;
     width: 250px;
+    @include send-back(fixed);
 }
 h4 {
     padding-left: 7px;
