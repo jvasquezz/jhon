@@ -1,15 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-<<<<<<< HEAD:src/styles.scss
 @import "~styles/mixins";
 
-=======
->>>>>>> develop:src/styles.css
 html {
     margin: 0 auto;
     height: 100%;
 }
 footer {
-<<<<<<< HEAD:src/styles.scss
     background-color: $jv-gray-nav !important;
     border-top: 2px solid $jv-gray-borders;
     @include bring-foreground(relative);
@@ -17,13 +13,6 @@ footer {
 html, head, body
 {
     @include serif();
-=======
-    background-color: #f6f6f6 !important;
-    border-top: 2px solid #eee;
-}
-html, head, body
-{
->>>>>>> develop:src/styles.css
     min-width: 100%;
     min-height: 100%;
     margin: 0px auto;
@@ -33,11 +22,6 @@ html, head, body
     left: 0;
     right: 0;
     overflow-x: hidden;
-<<<<<<< HEAD:src/styles.scss
-=======
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(239, 241, 241, 0.137) !important;
->>>>>>> develop:src/styles.css
 }
 body {
     display: block;

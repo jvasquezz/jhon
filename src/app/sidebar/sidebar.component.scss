@@ -11,12 +11,7 @@ div.hyperlinks, div.glossary, {
     text-align: justify;
     max-width: 100%;
     width: 250px;
-<<<<<<< HEAD:src/app/sidebar/sidebar.component.scss
     @include send-back(fixed);
-=======
-    position: fixed;
-    z-index: 0;
->>>>>>> develop:src/app/sidebar/sidebar.component.css
 }
 h4 {
     padding-left: 7px;
