@@ -9,6 +9,8 @@ div.hyperlinks, div.glossary, {
     text-align: justify;
     max-width: 100%;
     width: 250px;
+    position: fixed;
+    z-index: 0;
 }
 h4 {
     padding-left: 7px;

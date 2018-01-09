@@ -27,6 +27,7 @@
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.9) !important;
     position: fixed;
+    z-index: 1;
 }
 .not-scrolled {
     transition: background-color 1s ease-in-out;
@@ -35,6 +36,7 @@
     position: fixed;
     width: 100%;
     top: -0.5%;
+    border-bottom: 2px solid #eee;
 }
 nav {
     top: 0;
@@ -138,6 +140,7 @@ div.breadcrumbs li {
 }
 .page-scrolled, .not-scrolled {
     text-align: center;
+    top: -1px;
 }
 .page-scrolled ul, .not-scrolled ul {
     position: relative;
