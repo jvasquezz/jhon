@@ -7,11 +7,7 @@ div.hyperlinks, div.glossary, {
     text-align: left !important;
 }
 .sidebarDiv {
-    font-size: 13px;
-    text-align: justify;
-    max-width: 100%;
-    width: 250px;
-    @include send-back(fixed);
+    @include sidebar-format;
 }
 h4 {
     padding-left: 7px;

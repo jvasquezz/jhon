@@ -1,3 +1,4 @@
+
 @mixin send-back($pos) {
     z-index: 0;
     position: $pos;
@@ -9,4 +10,14 @@
 @mixin send-abyss($pos) {
     z-index: -1;
     position: $pos;
+}
+@mixin content-max-width {
+    max-width: 707px;
+}
+@mixin sidebar-format {
+    @include send-back(fixed);
+    font-size: $jv-font-small;
+    max-width: 100%;
+    text-align: justify;
+    width: 250px;
 }
