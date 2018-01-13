@@ -11,6 +11,7 @@ $jv-palette-black-90: #232b2b;
 $jv-palette-black-70: #353839;
 $jv-palette-black-50: #3b444b;
 $jv-palette-black-30: #414a4c;
+$jv-palette-black-10: #666;
 
 // Palette beach
 $jv-beach-green-30: #96ceb4;
@@ -31,13 +32,17 @@ $jv-white-90: #eff1f1;
 $jv-white-transparent-15: rgba(239, 241, 241, 0.137);
 $jv-white-transparent-70: rgba(239, 241, 241, 0.733);
 $jv-gray-nav: #f6f6f6;
-$jv-gray-borders: #eee;
+$jv-gray-title: #f6f8fa;
+$jv-gray-borders: #d1d3d4;
 $jv-green-borders: #9cbb62;
 $jv-green-light-terminal: #32CD32;
 $jv-blue-links: #156b88;
 $jv-green-links: #7b9150;
 
 // jv font sizes
-$jv-font-small: 13px;
-$jv-font-medium: 14px;
+$jv-font-small: 14px;
+$jv-font-medium: 15px;
 $jv-font-large: 16px;
+
+// constants
+$jv-working-space: 1269px;

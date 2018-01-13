@@ -42,3 +42,27 @@ span {
     padding-left: 90px;
     padding-top: 35px;
 }
+div#code-repository {
+    float:left;
+    @include sidebar-format(fixed);
+}
+div#portfolio {
+    overflow: hidden;
+    // margin: 0 auto !important;
+    max-width: 969px;
+    // margin: 0 auto !important;
+    // margin-left: 155px; 
+    // // float: right;
+    // align-content: right !important;
+    // max-width: 100%;
+    // height: auto;
+    // overflow: hidden;
+
+    // @include content-max-width;
+}
+div#placeholder iframe {
+    @include sidebar-format(relative);
+    @include send-abyss(relative);
+    border: none;
+    float: left;
+}

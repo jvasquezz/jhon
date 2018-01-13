@@ -9,3 +9,16 @@
     right: 0;
     overflow-x: hidden;
 }
+@mixin sidebar-format($pos) {
+    @include send-back($pos);
+    font-size: $jv-font-small;
+    text-align: justify;
+    width: 250px;
+}
+@mixin content-max-width {
+    max-width: 707px;
+}
+@mixin borders {
+    border-radius: 3px 3px 0 0;
+    border: 1px solid $jv-gray-borders;
+}

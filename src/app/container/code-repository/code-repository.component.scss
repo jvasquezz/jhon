@@ -1,0 +1,45 @@
+@import "~styles/mixins";
+
+div#code-repository {
+    @include borders;
+    @include sidebar-format(fixed);
+}
+#source-codes th {
+    background-color: $jv-gray-nav;
+}
+#source-codes ul {
+    list-style: none;
+}
+ul, li {
+    font-weight: bolder !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: block;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+h4 {
+    padding-left: 14px;
+    margin-bottom: 1em;
+}
+div#title {
+    background-color: $jv-gray-title;
+    border-bottom: 1px solid $jv-gray-borders;
+    display: block;
+    // padding: 9px 10px 10px;
+    margin-bottom: 5px;
+    line-height: 10px;
+}
+div#source-codes {
+    padding-left: 0px;
+    margin-bottom: 7px;
+    padding-bottom: 10px;
+    text-align: left !important;
+}
+.mini-repo-list-item {
+    display: block;
+    // border-top: 1px solid $jv-gray-borders;
+    position: relative;
+    padding: 0px 7px 0px 7px;
+    // box-sizing: border-box;
+}

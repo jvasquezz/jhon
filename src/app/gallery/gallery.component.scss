@@ -1,3 +1,5 @@
+@import "~styles/mixins";
+
 .gallery {
     margin: 0 auto;
     max-width: 719px;
@@ -25,4 +27,14 @@
 .gallery li.selected {
     filter: grayscale(100%);
     filter: brightness(61%);
+}
+div#placeholder iframe {
+    @include sidebar-format(relative);
+    border: none;
+    float: left;
+}
+div#gallery {
+    overflow: hidden;
+    // margin: 0 auto !important;
+    max-width: 969px;
 }

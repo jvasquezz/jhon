@@ -7,23 +7,21 @@ div.hyperlinks, div.glossary, {
     text-align: left !important;
 }
 .sidebarDiv {
-    @include sidebar-format;
+    @include sidebar-format(fixed);
 }
 h4 {
     padding-left: 7px;
     margin-bottom: 1em;
 }
 div.glossary {
-    border-radius: 3px;
-    border: 1px solid #d6d9dc;
+    @include borders;
 }
 iframe {
     max-width: 99%;
     height: 20%;
 }
 .side_img {
-    border-radius: 3px;
-    border: 1px solid #d6d9dc;
+    @include borders;
     margin: 0 auto;
     width: 99%;
     height: auto;

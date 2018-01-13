@@ -14,6 +14,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { ReadingComponent } from './reading/reading.component';
 import { ReadingService } from './services/reading.service';
+import { CodeRepositoryComponent } from './container/code-repository/code-repository.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ReadingService } from './services/reading.service';
     PortfolioComponent,
     AboutComponent,
     ReadingComponent,
+    CodeRepositoryComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,5 @@
+@import "~styles/mixins";
+
 .myname {
     font-style: oblique;
     font-weight: bold;
@@ -55,7 +57,7 @@
     height: auto;
     overflow: hidden;
     margin: 0 auto !important;
-    max-width: 969px;
+    max-width: $jv-working-space;
     align-content: right !important;
 }
 .main-content-body div.sidebar {
@@ -63,7 +65,7 @@
 }
 .main-content-body div.content {
     float: left;
-    max-width: 707px;
+    max-width: $jv-working-space;
 }
 .main-content-narrow div.content {
     max-width: 719px;

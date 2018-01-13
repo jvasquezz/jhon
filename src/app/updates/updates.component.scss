@@ -10,7 +10,7 @@ ul {
 li {
     @include inconsolata-medium();
     padding: 0 6px;
-    border-left-width: 4px;
+    border-left-width: 3px;
     list-style-position: outside;
     border-left-style: solid;
     list-style-image: none;
@@ -19,6 +19,7 @@ li {
     -webkit-font-smoothing: antialiased;
     display: list-item;
     border-left-color: $jv-green-borders;
+    border-radius: 3px;
 }
 div.current {
     /* width: 969px; */
