@@ -15,7 +15,8 @@ import { AboutComponent } from './about/about.component';
 import { ReadingComponent } from './reading/reading.component';
 import { ReadingService } from './services/reading.service';
 import { CodeRepositoryComponent } from './container/code-repository/code-repository.component';
-
+import { NotFoundComponent } from './not-found/not-found.component';
+import { DisqusModule } from '../../node_modules/ngx-disqus';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,13 @@ import { CodeRepositoryComponent } from './container/code-repository/code-reposi
     AboutComponent,
     ReadingComponent,
     CodeRepositoryComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     ExpandableListModule,
     AppRoutingModule,
+    DisqusModule.forRoot('jvasquezz'),
   ],
   providers: [ReadingService, SocialService, UpdatesService],
   bootstrap: [AppComponent]

@@ -5,11 +5,6 @@ html {
     margin: 0 auto;
     height: 100%;
 }
-footer {
-    background-color: $jv-gray-nav !important;
-    border-top: 2px solid $jv-gray-borders;
-    @include bring-foreground(relative);
-}
 html, head, body
 {
     @include serif();
@@ -65,17 +60,4 @@ blockquote::before {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
-}
-.discussion {
-    margin: 0 auto !important;
-    overflow: hidden;
-    max-width: 969px;
-    padding-left: 1%;
-    height: auto;
-    overflow: hidden;
-    align-content: right !important;
-}
-#gist, #disqus_thread {
-    margin: 0 auto !important;
-    max-width: 99%;
 }

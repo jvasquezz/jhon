@@ -1,0 +1,20 @@
+@import "~styles/mixins";
+
+div#notFound {
+    all: initial;
+    text-align: center;
+    overflow: hidden;
+    @include send-abyss(relative);
+
+}
+div#placeholder iframe {
+    @include sidebar-format(relative);
+    @include send-abyss(relative);
+    border: none;
+    float: left;
+}
+footer {
+    background-color: $jv-gray-nav;
+    border-top: 2px solid $jv-gray-borders;
+    @include bring-foreground(relative);
+}

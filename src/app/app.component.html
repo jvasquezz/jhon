@@ -1,9 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<header><app-social></app-social></header>
+<header>
+  <app-social></app-social>
+</header>
 
 <div [ngClass]="innerWidth > 1019? 'main-content-body' : 'main-content-narrow'">
 
-  <!-- <app-about></app-about> -->
   <div class="content">
     <router-outlet></router-outlet>
   </div>
