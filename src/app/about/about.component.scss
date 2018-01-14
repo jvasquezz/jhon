@@ -1,33 +1,14 @@
 @import "~styles/mixins";
 
-/* .main-content-body div.summary {
-    max-width: 707px;
-    float: left;
-} */
-/* .main-content-narrow div.summary {
-    max-width: 719px;
-    overflow: hidden;
-} */
-div.summary {
-    // @include content-max-width;
-}
 div#sidebar {
-    // margin-left: 719px;
     float: right;
-    // margin-left: 1000px;
 }
 div#about {
-    // margin-left: 155px;
-    // float: left;
-    // max-width: 100%;
-    // height: auto;
     overflow: hidden;
-    // margin: 0 auto !important;
-    max-width: 969px;
-    // @include content-max-width;
-    // align-content: right !important;
+    @include content-max-width;
 }
 div#placeholder iframe {
+    @include send-abyss(relative);
     @include sidebar-format(relative);
     border: none;
     float: left;
