@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~styles/mixins";
 
+* {
+    transition: .2s ease-in-out;
+}
 html {
     margin: 0 auto;
     height: 100%;
