@@ -5,6 +5,7 @@ div#notFound {
     text-align: center;
     overflow: hidden;
     @include send-abyss(relative);
+    left: -3%;
 
 }
 div#placeholder iframe {
