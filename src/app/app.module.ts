@@ -17,6 +17,7 @@ import { ReadingService } from './services/reading.service';
 import { CodeRepositoryComponent } from './container/code-repository/code-repository.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DisqusModule } from '../../node_modules/ngx-disqus';
+import { SignatureComponent } from './signature/signature.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DisqusModule } from '../../node_modules/ngx-disqus';
     ReadingComponent,
     CodeRepositoryComponent,
     NotFoundComponent,
+    SignatureComponent,
   ],
   imports: [
     BrowserModule,
