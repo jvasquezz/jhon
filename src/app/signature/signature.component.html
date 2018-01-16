@@ -1,8 +1,10 @@
-<div id="footer">
-<footer id="footer" style="text-align:center;padding:40px;">
-    <div class="pdiv">
-      <img src="assets/00111.jpg" style="border-radius:50%;max-width:100px;">
-      <div class="overlay"></div>
+<div [ngClass]="innerWidth > 1019? 'desktop': 'mobile'" id="footer">
+  <footer style="text-align:center;">
+    <div class="outer" style="position:relative;text-align:center;">
+      <div class="inner">
+        <img src="assets/00111.jpg" style="border-radius:50%;max-width:100px;">
+        <div class="text"><pre><b>Greetings</b></pre></div>
+    </div>
     </div>
     <pre style="float:center;">
 - Jon Diaz -

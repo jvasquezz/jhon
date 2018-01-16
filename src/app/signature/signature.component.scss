@@ -1,25 +1,50 @@
 @import "~styles/mixins";
 
-div#footer {
-    padding-top: 500px;
-}
-footer#footer {
-    left: -4.5%;
+#footer.desktop, #footer.mobile {
+    padding-top: 50px;
     img {
         border: 3px solid $jv-palette-green-50;
-        opacity: .0;
         display: block;
-        margin: auto;
-        transition: 2s 20s;
+        margin: 0 auto;
         -webkit-filter: contrast(150%);filter: contrast(150%);
     }
-    bottom: 0;
+}
+#footer.desktop {
+    padding-top: 200px;
+    img {
+        opacity: .0;
+        transition: 2s 20s;
+    }
+    left: -3%;
+}
+#footer.mobile {
+    img { opacity: .8; }
+    font-size: 12px;
+}
+footer#footer {
     width: 100%;
     @include bring-foreground(absolute);
 }
-footer#footer:hover {
+#footer:hover {
     img {
-        opacity: .80;
+        opacity: .8;
         transition: 0.3s ease-in;
     }
+}
+.text {
+    opacity: 0;
+    color: $jv-palette-black-50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.inner {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+.inner:hover {
+    .text { opacity: 1; }
+    img { filter: opacity(.2) !important; transition: 0s ease-in-out; }
 }
