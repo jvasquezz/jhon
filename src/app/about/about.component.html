@@ -1,9 +1,9 @@
-<div style="width: 969px;">
+<div style="max-width: 969px;">
 <br>
-<div id="sidebar">
+<div id="sidebar" *ngIf="innerWidth > 1019">
     <app-sidebar></app-sidebar>
 </div>
-<div id="placeholder">
+<div id="placeholder" *ngIf="innerWidth > 1019">
         <iframe style="width:250px;"></iframe>
 </div>
 

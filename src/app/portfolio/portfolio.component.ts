@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -9,7 +9,15 @@ export class PortfolioComponent implements OnInit {
 
   constructor() { }
 
+  innerWidth: Number;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
+  }
+
   ngOnInit() {
+    this.innerWidth = window.innerWidth;
   }
 
 }

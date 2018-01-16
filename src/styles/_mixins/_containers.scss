@@ -13,7 +13,7 @@
     @include send-back($pos);
     font-size: $jv-font-small;
     text-align: justify;
-    width: 250px;
+    max-width: 250px;
 }
 @mixin content-max-width {
     max-width: 707px;

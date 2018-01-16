@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Image } from '../image';
 import { IMAGES } from '../images';
 
@@ -13,9 +13,17 @@ export class GalleryComponent implements OnInit {
 
   selectedImage: Image;
 
+  innerWidth: Number;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
+  }
+
   constructor() { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth;
   }
 
   onSelect(img: Image): void {

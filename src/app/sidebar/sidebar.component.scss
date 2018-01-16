@@ -23,6 +23,6 @@ iframe {
 .side_img {
     @include borders;
     margin: 0 auto;
-    width: 99%;
+    max-width: 99%;
     height: auto;
 }

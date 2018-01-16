@@ -1,9 +1,9 @@
-<div style="width: 969px;">
+<div style="max-width: 969px;">
 <br>
-<div id="code-repository">
+<div id="code-repository" *ngIf="innerWidth > 1019">
     <app-code-repository></app-code-repository>
 </div>
-<div id="placeholder">
+<div id="placeholder" *ngIf="innerWidth > 1019">
     <iframe style="width:250px;"></iframe>
 </div>
 <div id="portfolio">
@@ -52,7 +52,4 @@
       Here in this page...</p>
   </div>
 </div>
-<!-- <div class="sidebar">
-    <app-sidebar></app-sidebar>
-</div> -->
 </div>
