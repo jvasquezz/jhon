@@ -7,6 +7,9 @@ footer {
     left: 0;
     padding: 1rem;
 }
+pre {
+    @include sans($jv-kind-text);
+}
 #footer.desktop, #footer.mobile {
     padding-top: 300px;
     img {
@@ -21,11 +24,10 @@ footer {
         opacity: .0;
         transition: 2s 20s;
     }
-    left: -3%;
 }
 #footer.mobile {
     img { opacity: .8; }
-    font-size: 12px;
+    font-size: 14px;
 }
 footer#footer {
     width: 100%;
@@ -44,6 +46,9 @@ footer#footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-left: 9px;
+    font-size: 1.05em;
+    font-weight: 650;
 }
 div.inner {
     display: block;

@@ -4,9 +4,16 @@
 }
 @mixin inconsolata-medium {
     font-family: Inconsolata, Droid Sans Mono, Proggy, Monofur, Profont, Monaco, Andale Mono;
-    font-size: 81%;
+    font-size: .8em;
 }
 @mixin serif {
     font-family: Arial, Helvetica, sans-serif;
     background-color: $jv-white-transparent-15 !important;
+}
+@mixin sans($color, $font-size: 1em, $font-weight: 400) {
+    font-family: "Avenir", "Lato", "Gill Sans", sans-serif;
+    background-color: $jv-white-transparent-15 !important;
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
 }

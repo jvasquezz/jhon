@@ -38,7 +38,11 @@ a {
     text-decoration: none;
     font-weight: 500;
 }
-a:hover {
+p a {
+    @include sans($jv-blue-links, 1em, 600);
+}
+a:hover,
+p a:hover {
     color: $jv-green-links;
 }
 blockquote {
@@ -63,4 +67,9 @@ blockquote::before {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+body h2 {
+    max-width: 97%;
+    margin-left: 1.5%;
+    @include sans($jv-kind-text, 1.5em, 600);
 }
