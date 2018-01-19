@@ -47,10 +47,10 @@
 }
 .current {
     margin: 0 auto;
-    max-width: 719px;
+    @include content-max-width;
 }
 .main-content-narrow {
-    max-width: 719px !important;
+    @include content-max-width;
 }
 .main-content-body, .main-content-narrow {
     max-width: 100%;
@@ -64,10 +64,15 @@
     margin-left: 719px;
 }
 .main-content-body div.content {
+    @include content-max-width;
     text-align: left;
     max-width: $jv-working-space;
+    color: $jv-kind-smaller-text;
 }
 .main-content-narrow div.content {
-    max-width: 719px;
+    margin: 0 auto;
+    @include content-max-width;
     overflow: hidden;
+    font-size: $jv-font-large;
+    color: $jv-kind-text;
 }

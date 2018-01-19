@@ -10,19 +10,16 @@ ul {
 li {
     @include inconsolata-medium();
     padding: 0 6px;
-    border-left-width: 3px;
+    border-left: 3px solid $jv-green-borders;
+    border-radius: 3px;
     list-style-position: outside;
-    border-left-style: solid;
     list-style-image: none;
     margin-bottom: 0px;
     text-align: left;
     -webkit-font-smoothing: antialiased;
     display: list-item;
-    border-left-color: $jv-green-borders;
-    border-radius: 3px;
 }
 div.current {
-    /* width: 969px; */
     width: 707px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -31,7 +28,7 @@ div.current {
 }
 .current p {
     line-height: 20px !important;
-    color: #1e3044;
+    color: $jv-updates-green;
     padding-bottom: 5px;
     padding-top: 5px;
 }

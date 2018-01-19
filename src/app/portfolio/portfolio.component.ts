@@ -14,14 +14,27 @@ export class PortfolioComponent implements OnInit {
   }
 
   innerWidth: Number;
+  isMobile: boolean;
+  isDesktop: boolean;
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.innerWidth = window.innerWidth;
+    this.setMobileOrDesktopView(this.innerWidth);
   }
 
+  setMobileOrDesktopView(wWidth) {
+    this.isMobile = false;
+    this.isDesktop = false;
+    if (wWidth < 719) {
+      this.isMobile = true;
+    } else if (wWidth > 1019) {
+      this.isDesktop = true;
+    }
+  }
   ngOnInit() {
     this.innerWidth = window.innerWidth;
+    this.setMobileOrDesktopView(this.innerWidth);
     this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(this.videoURL);
   }
 

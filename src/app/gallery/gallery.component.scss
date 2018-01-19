@@ -1,8 +1,7 @@
 @import "~styles/mixins";
-
 .gallery {
     margin: 0 auto;
-    max-width: 719px;
+    max-width: 500px;
 }
 .gallery li {
     list-style: none;
@@ -35,6 +34,4 @@ div#placeholder iframe {
 }
 div#gallery {
     overflow: hidden;
-    // margin: 0 auto !important;
-    max-width: 969px;
 }

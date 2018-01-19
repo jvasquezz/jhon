@@ -1,6 +1,6 @@
-<div id="placeholder" *ngIf="innerWidth > 1019">
+<!-- <div id="placeholder" *ngIf="innerWidth > 1019">
     <iframe style="width:250px;"></iframe>
-</div>
+</div> -->
 <div id="gallery">
   <br>
 <div class="gallery">
@@ -8,8 +8,11 @@
     <li *ngFor="let img of images"
     [class.selected]="img === selectedImage"
     (click)="onSelect(img)">
-    <img [src]="img.path" style="max-height:110px;">
+    <img [src]="img.path" style="max-width:100%;">
     </li>
   </ul>
 </div>
+</div>
+<div *ngIf="!isMobile">
+    <app-signature>Hobbyist photographer</app-signature>
 </div>

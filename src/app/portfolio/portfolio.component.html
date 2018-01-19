@@ -1,9 +1,9 @@
 <div style="max-width: 969px;">
   <br>
-  <div id="code-repository" *ngIf="innerWidth > 1019">
+  <div id="code-repository" *ngIf="isDesktop">
     <app-code-repository></app-code-repository>
   </div>
-  <div id="placeholder" *ngIf="innerWidth > 1019">
+  <div id="placeholder" *ngIf="isDesktop">
     <iframe style="width:250px;"></iframe>
   </div>
   <div id="portfolio">
@@ -16,12 +16,15 @@
 
     <div id="Savetest">
       <h2>Savetest - agile way to test your app</h2>
-      <p><b><i>Savetest</i></b> automates testing new features on your application or to test small command line applications. A problem with major test environment is the required knowledge of the platform, usually, this environment are controlled by QA and a developer has few tools immediately available for testing new features. I started this project in order to <b>rapidly add new test cases as you program your application.</b> The saved tests are stored as JSON objects making them easy to export if you want to reuse them. <i>Here is a quick demo usage:</i>
+      <p>There seems to be a never ending cycle between QA engineers and coders. The coder happily pushes 2 commits and 2 hours later QA comes back with 7 bugs. Testing environments seeem to be too intricate for developers to be focusing their energy in keeping track of all the testing tools, therefore, there is a need to assign QA developers to work specifically in the task of finding bugs before code reaches production.<br><br>For this reason, developers rarely need to set a test environment when working on new features. Nevertheless, it is useful and important to be able to test your application often. There is even a concept of Test Driven Development (TDD), though it seems to have been forgotten as fixed-timeline projects become more obtrusive. If given the choice, clients rarely see a benefit in starting a project as a TDD, and minimizing the costs upfront is what gets companies the most clients.<br><br>The industry seems to be taking the shortest route and there seems to be more cases of delagating the Quality Assurance to a later and minimal phase.<br><br>I started <b>Savetest</b> in order to provide developers with an easy to use automation tool to <b>rapidly add test cases during development without interrupting an agile life cycle.</b> Moreover, the tests are stored as JSON objects making them easy to export them for reuse. <i>Here is a quick demo usage:</i>
       </p>
       <div id="video">
         <video controls="true">
-            <source src='assets/Savetest-demo.mov'/>
+            <source src='assets/jonadiazz.savetest.m4v'/>
         </video>
       </div>
     </div>
+  </div>
+  <div *ngIf="!isMobile">
+      <app-signature>Currently working with Ceenbot Inc.</app-signature>
   </div>
