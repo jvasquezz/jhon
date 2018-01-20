@@ -1,9 +1,9 @@
 <div style="max-width: 969px;">
   <br>
-  <div id="code-repository" *ngIf="isDesktop">
+  <div id="code-repository" *ngIf="deskMobile.isDesktop">
     <app-code-repository></app-code-repository>
   </div>
-  <div id="placeholder" *ngIf="isDesktop">
+  <div id="placeholder" *ngIf="deskMobile.isDesktop">
     <iframe style="width:250px;"></iframe>
   </div>
   <div id="portfolio">
@@ -25,6 +25,6 @@
       </div>
     </div>
   </div>
-  <div *ngIf="!isMobile">
+  <div *ngIf="!deskMobile.isMobile">
       <app-signature>Currently working with Ceenbot Inc.</app-signature>
   </div>

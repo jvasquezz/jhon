@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { DesktopOrMobileView } from '../desktop-or-mobile';
 
 @Component({
   selector: 'app-about',
@@ -7,31 +8,19 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.deskMobile = DesktopOrMobileView.NewInstance(false);
+  }
 
-  innerWidth: Number;
-  isMobile: boolean;
-  isDesktop: boolean;
+  deskMobile: DesktopOrMobileView;
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.innerWidth = window.innerWidth;
-    this.setMobileOrDesktopView(this.innerWidth);
-  }
-
-  setMobileOrDesktopView(winWidth) {
-    this.isMobile = false;
-    this.isDesktop = false;
-    if (winWidth < 719) {
-      this.isMobile = true;
-    } else if (winWidth > 1019) {
-      this.isDesktop = true;
-    }
+    this.deskMobile.setView(window.innerWidth);
   }
 
   ngOnInit() {
-    this.innerWidth = window.innerWidth;
-    this.setMobileOrDesktopView(this.innerWidth);
+    this.deskMobile.setView(window.innerWidth);
   }
 
 }

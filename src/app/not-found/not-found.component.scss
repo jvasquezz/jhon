@@ -6,7 +6,9 @@ div#notFound {
     overflow: hidden;
     @include send-abyss(relative);
     left: -3%;
-
+}
+div#notFound.mobile {
+        font-size: .6em;
 }
 div#placeholder iframe {
     @include sidebar-format(relative);

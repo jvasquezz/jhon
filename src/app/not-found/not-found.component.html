@@ -1,8 +1,7 @@
 <div id="placeholder">
   <iframe style="width:250px;"></iframe>
 </div>
-<div id="notFound" style="max-width:100%;text-align:center;color:#47474F;font-family:'Droid Serif'">
-  <!-- <pre style="max-width:100%;overflow:hidden;text-align:center;"> -->
+<div id="notFound" [ngClass]="deskMobile.isMobile? 'mobile' : 'desktop'" style="max-width:100%;text-align:center;color:#47474F;font-family:'Droid Serif'">
   <pre>
   
   

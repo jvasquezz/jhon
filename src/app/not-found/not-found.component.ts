@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { DesktopOrMobileView } from '../desktop-or-mobile';
 
 @Component({
   selector: 'app-not-found',
@@ -11,9 +12,19 @@ export class NotFoundComponent implements OnInit {
   language = 'english';
   thispageurl = '';
 
-  constructor() { }
+  deskMobile: DesktopOrMobileView;
+
+  constructor() {
+    this.deskMobile = DesktopOrMobileView.NewInstance(false);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.deskMobile.setView(window.innerWidth);
+  }
 
   ngOnInit() {
+    this.deskMobile.setView(window.innerWidth);
   }
 
 }

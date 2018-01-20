@@ -1,9 +1,9 @@
 <div style="max-width: 969px;">
 <br>
-<div id="sidebar" *ngIf="isDesktop">
+<div id="sidebar" *ngIf="deskMobile.isDesktop">
     <app-sidebar></app-sidebar>
 </div>
-<div id="placeholder" *ngIf="isDesktop">
+<div id="placeholder" *ngIf="deskMobile.isDesktop">
         <iframe style="width:250px;"></iframe>
 </div>
 
@@ -23,6 +23,6 @@
 </div>
 <br>
 </div>
-<div *ngIf="!isMobile">
+<div *ngIf="!deskMobile.isMobile">
     <app-signature>How about you?!~.></app-signature>
 </div>
