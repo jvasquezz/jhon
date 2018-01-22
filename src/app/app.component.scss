@@ -1,78 +1,81 @@
 @import "~styles/mixins";
 
 .myname {
-    font-style: oblique;
-    font-weight: bold;
-    color: darkslategray;
+  font-style: oblique;
+  font-weight: bold;
+  color: darkslategray;
 }
 .vote-up a {
-    color: gray;
-    padding-bottom: 3px;
+  color: gray;
+  padding-bottom: 3px;
 }
 .vote-up button {
-    font-size: 293%;
-    color: gray;
-    padding-bottom: 5px;
-    cursor: pointer;
-    border: none;
-    background-color: rgba(251, 251, 251, 0);
+  font-size: 293%;
+  color: gray;
+  padding-bottom: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(251, 251, 251, 0);
 }
 .vote-up {
-    text-align: center;
+  text-align: center;
 }
 .rating_votes a {
-    color: gray;
-    font-weight: 400;
+  color: gray;
+  font-weight: 400;
 }
 .rating_votes {
-    font-size: 19px;
-    text-align: center;
-    align-content: center;
-    font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  text-align: center;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
 }
 .vote-down button {
-    text-align: center;
-    font-size: 293%;
-    color: gray;
-    cursor: pointer;
-    border: none;
-    background-color: rgba(251, 251, 251, 0);
+  text-align: center;
+  font-size: 293%;
+  color: gray;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(251, 251, 251, 0);
 }
 .vote-down {
-    text-align: center;
+  text-align: center;
 }
 .vote {
-    width: 11%;
-    margin: 0 auto;
+  width: 11%;
+  margin: 0 auto;
 }
 .current {
-    margin: 0 auto;
-    @include content-max-width;
+  margin: 0 auto;
+  @include content-max-width;
 }
 .main-content-narrow {
-    @include content-max-width;
+  @include content-max-width;
 }
-.main-content-body, .main-content-narrow {
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    margin: 0 auto !important;
-    max-width: $jv-working-space;
-    align-content: right !important;
+.main-content-body,
+.main-content-narrow {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto !important;
+  max-width: $jv-working-space;
+  align-content: right !important;
 }
-.main-content-body div.sidebar {
-    margin-left: 719px;
-}
-.main-content-body div.content {
+.main-content-body {
+  div.content {
     @include content-max-width;
     text-align: left;
     max-width: $jv-working-space;
     color: $jv-kind-smaller-text;
+  }
+  div.sidebar {
+    margin-left: 719px;
+  }
 }
 .main-content-narrow div.content {
-    margin: 0 auto;
-    @include content-max-width;
-    overflow: hidden;
-    font-size: $jv-font-large;
-    color: $jv-kind-text;
+  margin: 0 auto;
+  @include content-max-width;
+  overflow: hidden;
+  font-size: $jv-font-large;
+  color: $jv-kind-text;
 }

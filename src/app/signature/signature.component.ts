@@ -8,7 +8,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
     <div class="outer" style="position:relative;text-align:center;">
       <div class="inner">
         <img src="assets/00111.jpg" style="border-radius:50%;max-width:100px;">
-        <div class="text"><pre><b>Greetings</b></pre></div>
+        <div class="text-om">
+          <pre><b>ॐ</b></pre>
+        </div>
+        <div class="text">
+          <pre><b>Greetings</b></pre>
+        </div>
     </div>
     </div>
     <pre style="float:center;">

@@ -13,9 +13,6 @@ h4 {
     padding-left: 7px;
     margin-bottom: 1em;
 }
-div.glossary {
-    @include borders;
-}
 iframe {
     max-width: 99%;
     height: 20%;

@@ -14,6 +14,12 @@ html, head, body
     @include expand-in-space();
 }
 body {
+    h2, h3 {
+        max-width: 97%;
+        margin-left: 1.5%;
+    }
+    h2 { @include sans($jv-kind-text, 1.5em, 600); }
+    h3 { @include sans($jv-kind-text, 1.2em, 600); }
     display: block;
     -webkit-font-smoothing: antialiased;
     display: block;
@@ -30,18 +36,18 @@ p {
     max-width: 97%;
     margin-left: 1.5%;
     line-height: 25px;
+    a {
+        @include sans($jv-blue-links, 1em, 600);
+    }
 }
 a {
     color: $jv-blue-links;
     text-decoration: none;
     font-weight: 500;
 }
-p a {
-    @include sans($jv-blue-links, 1em, 600);
-}
 a:hover,
 p a:hover {
-    color: $jv-green-links;
+    color: $jv-links-hover;
 }
 blockquote {
     text-align: right;
@@ -66,8 +72,6 @@ blockquote::before {
     max-width: 100%;
     height: auto;
 }
-body h2 {
-    max-width: 97%;
-    margin-left: 1.5%;
-    @include sans($jv-kind-text, 1.5em, 600);
+hr {
+    border-color: $jv-white-90;
 }

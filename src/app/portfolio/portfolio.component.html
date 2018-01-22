@@ -1,6 +1,8 @@
 <div style="max-width: 969px;">
   <br>
   <div id="code-repository" *ngIf="deskMobile.isDesktop">
+    <br>
+    <br>
     <app-code-repository></app-code-repository>
   </div>
   <div id="placeholder" *ngIf="deskMobile.isDesktop">
@@ -20,11 +22,12 @@
       </p>
       <div id="video">
         <video controls="true">
-            <source src='assets/jonadiazz.savetest.m4v'/>
+          <source src='assets/jonadiazz.savetest.m4v' />
         </video>
       </div>
     </div>
   </div>
   <div *ngIf="!deskMobile.isMobile">
-      <app-signature>Currently working with Ceenbot Inc.</app-signature>
+    <app-signature>Currently working with Ceenbot Inc.</app-signature>
   </div>
+</div>

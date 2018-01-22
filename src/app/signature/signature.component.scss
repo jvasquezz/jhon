@@ -20,10 +20,12 @@ pre {
     }
 }
 #footer.desktop {
-    img {
-        opacity: .0;
+    img,
+    .text-om {
         transition: 2s 20s;
     }
+    img { opacity: .0; }
+    .text-om { opacity: 1; }
 }
 #footer.mobile {
     img { opacity: .8; }
@@ -38,11 +40,16 @@ footer#footer {
         opacity: .8;
         transition: 0.3s ease-in;
     }
+    .text-om {
+        transition: 0.5s ease-in;
+        opacity: 0;
+    }
 }
+
+.text-om,
 .text {
-    opacity: 0;
     color: $jv-palette-black-50;
-    position: absolute;
+    @include send-abyss(absolute);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -50,6 +57,8 @@ footer#footer {
     font-size: 1.05em;
     font-weight: 650;
 }
+.text { opacity: 0; }
+.text-om { opacity: 1; }
 div.inner {
     display: block;
     width: 100px;

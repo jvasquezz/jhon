@@ -2,21 +2,20 @@
 
 div#code-repository {
     @include borders;
-    @include sidebar-format(fixed);
+    ul, li {
+        font-weight: bolder !important;
+        margin-bottom: 0;
+        margin-top: 0;
+        display: block;
+        padding-left: 0;
+        box-sizing: border-box;
+    }
 }
 #source-codes th {
     background-color: $jv-gray-nav;
 }
 #source-codes ul {
     list-style: none;
-}
-ul, li {
-    font-weight: bolder !important;
-    margin-bottom: 0;
-    margin-top: 0;
-    display: block;
-    padding-left: 0;
-    box-sizing: border-box;
 }
 h4 {
     padding-left: 14px;
@@ -42,4 +41,12 @@ div#source-codes {
     position: relative;
     padding: 0px 7px 0px 7px;
     // box-sizing: border-box;
+}
+div#sidebar {
+    @include sidebar-format(fixed);
+}
+div.embed_quora {
+    @include borders();
+    padding: 8px 8px;
+    text-align: left;
 }

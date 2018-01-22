@@ -1,151 +1,160 @@
 @import "~styles/mixins";
 
-.page-scrolled div.breadcrumbs a:hover {
-    font-weight: bolder !important;
-}
-.not-scrolled div.breadcrumbs a.active {
-    color: rgb(92, 109, 59) !important;
-    font-weight: bolder !important;
-}
-.page-scrolled div.breadcrumbs a.active {
-    font-weight: bolder !important;
-    color: rgb(123, 145, 80) !important;
-}
-.not-scrolled div.breadcrumbs a:hover {
-    color: rgb(123, 145, 80) !important;
-    font-weight: bolder !important;
-}
-.not-scrolled div.breadcrumbs a {
-    transition: color 1s ease-in-out;
-    color: rgba(0, 0, 0, 0.9) !important;
-}
-.page-scrolled .fa, .page-scrolled div.breadcrumbs a {
-    color: $jv-white-transparent-70 !important;
-    transition: color 1s ease-in-out;
-    cursor: pointer;
-}
-.page-scrolled {
-    background-attachment: scroll;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    @include bring-foreground(fixed);
-}
+.page-scrolled,
 .not-scrolled {
-    transition: background-color 1s ease-in-out;
-    background-attachment: scroll;
-    box-sizing: border-box;
-    position: fixed;
-    width: 100%;
-    top: -0.5%;
-    border-bottom: 2px solid #eee;
-}
-nav {
-    top: 0;
-}
-.navbar-fixed-top, .navbar-fixed-top-mobile {
-    margin: 0 auto;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    top: 0px;
-    text-align: center;
-}
-.navbar-fixed-top-mobile ul {
-    list-style: none;
-    list-style-image: none;
-    list-style-type: georgian;
-}
-.social_sites ul {
-    margin-bottom: -5px;
-}
-.breadcrumbs ul {
-    margin-top: 10px;
-    margin-bottom: 1%;
-}
-.social_sites li {
-    display: inline;
-    font-size: 115%;
-    padding: 4px;
-}
-.fa-linkedin:hover {
-    color: #0077b5 !important;
-    @extend %smooth-transition;
-    font-size: 115% !important;
-}
-.fa-angellist:hover {
-    font-size: 115% !important;
-    @extend %smooth-transition;
-}
-.fa-github:hover {
-    color: #6e5494 !important;
-    @extend %smooth-transition;
-    font-size: 110% !important;
-}
-.fa-quora:hover {
-    font-size: 105% !important;
-    color:  #a82400 !important;
-    @extend %smooth-transition;
-}
-.fa-stack-overflow:hover {
-    font-size: 110% !important;
-    color: #f48024 !important;
-    @extend %smooth-transition;
-}
-%smooth-transition {
-    transition: color 0s ease-in-out !important;
-}
-.fa-quora {
-    font-size: 85%;
-}
-.fa-linkedin {
-    font-size: 105%;
-}
-.fa-stack-overflow {
-    font-size: 90%;
-}
-.fa {
-    width: .8em;
-    height: 1em;
-    margin: 0 auto;
-    border-radius: 2px;
-    border: 5px black;
-    box-sizing: border-box;
-    transition: color 1s ease-in-out;
-    -webkit-font-smoothing: antialiased;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, 0.9) !important;
-}
-.cover img {
-    margin: 0 auto;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-}
-.expandable expandable-list-item {
-    max-width: 100%;
-    list-style: none;
-    text-decoration: none;
-    background-color: rgba(239, 241, 241, 0.137);
-}
-.expandable expandable-list {
-    text-align: center;
+  text-align: center;
+  top: -1px;
+  ul {
+    position: relative;
+  }
 }
 
 div.breadcrumbs {
-    font-family: "Droid Serif";
-}
-div.breadcrumbs li {
+  font-family: "Droid Serif";
+  li {
     display: inline;
+  }
+  ul {
+    margin-top: 10px;
+    margin-bottom: 1%;
+  }
+}
+
+.not-scrolled {
+  transition: background-color 1s ease-in-out;
+  background-attachment: scroll;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  top: -0.5%;
+  border-bottom: 2px solid #eee;
+  div.breadcrumbs {
+    a {
+      transition: color 1s ease-in-out;
+      color: rgba(0, 0, 0, 0.9) !important;
+    }
+    a.active {
+      color: $jv-links-in-page !important;
+      font-weight: bolder !important;
+    }
+    a:hover {
+      color: $jv-links-hover !important;
+      font-weight: bolder !important;
+    }
+  }
+}
+
+.page-scrolled {
+  background-attachment: scroll;
+  box-sizing: border-box;
+  background-color: $jv-palette-black;
+  @include bring-foreground(fixed);
+  div.breadcrumbs {
+    a:hover {
+      font-weight: bolder !important;
+    }
+    a.active {
+      font-weight: bolder !important;
+      color: $jv-green-neon !important;
+    }
+  }
+  .fa,
+  div.breadcrumbs a {
+    color: $jv-white-transparent-70 !important;
+    transition: color 1s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+.navbar-fixed-top,
+.navbar-fixed-top-mobile {
+  margin: 0 auto;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  top: 0px;
+  text-align: center;
+}
+.navbar-fixed-top-mobile ul {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: georgian;
+}
+.social_sites {
+  ul {
+    margin-bottom: -5px;
+  }
+  li {
+    display: inline;
+    font-size: 115%;
+    padding: 4px;
+  }
+}
+.fa-linkedin:hover {
+  color: #0077b5 !important;
+  @extend %smooth-transition;
+  font-size: 115% !important;
+}
+.fa-angellist:hover {
+  font-size: 115% !important;
+  @extend %smooth-transition;
+}
+.fa-github:hover {
+  color: #6e5494 !important;
+  @extend %smooth-transition;
+  font-size: 110% !important;
+}
+.fa-quora {
+  font-size: 85%;
+}
+.fa-quora:hover {
+  font-size: 105% !important;
+  color: #a82400 !important;
+  @extend %smooth-transition;
+}
+.fa-stack-overflow:hover {
+  font-size: 110% !important;
+  color: #f48024 !important;
+  @extend %smooth-transition;
+}
+%smooth-transition {
+  transition: color 0s ease-in-out !important;
+}
+.fa-linkedin {
+  font-size: 105%;
+}
+.fa-stack-overflow {
+  font-size: 90%;
+}
+.fa {
+  width: 0.8em;
+  height: 1em;
+  margin: 0 auto;
+  border-radius: 2px;
+  border: 5px black;
+  box-sizing: border-box;
+  transition: color 1s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+.cover img {
+  margin: 0 auto;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.expandable expandable-list-item {
+  max-width: 100%;
+  list-style: none;
+  text-decoration: none;
+  background-color: rgba(239, 241, 241, 0.137);
+}
+.expandable expandable-list {
+  text-align: center;
 }
 
 .profile-img {
-    max-width: 25%;
-    border-radius: 50%;
-}
-.page-scrolled, .not-scrolled {
-    text-align: center;
-    top: -1px;
-}
-.page-scrolled ul, .not-scrolled ul {
-    position: relative;
+  max-width: 25%;
+  border-radius: 50%;
 }

@@ -1,3 +1,8 @@
+// tools used for color contrast and shade selections
+// http://juicystudio.com/services/luminositycontrastratio.php#specify
+// http://www.color-hex.com/color/39ff14
+// https://www.viget.com/articles/color-contrast/
+
 // Palette black
 $jv-palette-blue-dark: #011f4b;
 $jv-palette-blue-90: #03396c;
@@ -8,8 +13,10 @@ $jv-palette-blue-30: #b3cde0;
 // Palette black
 $jv-palette-black: #0e1111;
 $jv-palette-black-90: #232b2b;
+$jv-palette-black-80: #333333;
 $jv-palette-black-70: #353839;
 $jv-palette-black-50: #3b444b;
+$jv-palette-black-40: #47474f;
 $jv-palette-black-30: #414a4c;
 $jv-palette-black-10: #666;
 
@@ -20,12 +27,63 @@ $jv-beach-orange-80: #ff6f69;
 $jv-beach-orange-30: #ffcc5c;
 $jv-beach-green-50: #88d8b0;
 
+// Monochromatic colors of #008000 blue
+$jv-mono-blue-0: #003362;
+$jv-mono-blue-1: #00407b;
+$jv-mono-blue-2: #004e95;
+$jv-mono-blue-3: #005bae;
+$jv-mono-blue-4: #0068c8;
+$jv-mono-blue-5: #0076e1;
+
+// Monochromatic colors of dblue
+$jv-mono-bblue-0: #001562;
+$jv-mono-bblue-1: #001b7b;
+$jv-mono-bblue-2: #002095;
+$jv-mono-bblue-3: #0026ae;
+$jv-mono-bblue-4: #002cc8;
+$jv-mono-bblue-5: #0031e1;
+
+// Monochromatic colors of dblue
+$jv-mono-dblue-0: #000000;
+$jv-mono-dblue-1: #000b0d;
+$jv-mono-dblue-2: #012126;
+$jv-mono-dblue-3: #01373f;
+$jv-mono-dblue-4: #014d58;
+$jv-mono-dblue-5: #026371;
+$jv-green-blue: #1e443e;
+
+// Triadic green, red, blue
+$jv-triadic-green:#568d4a;
+$jv-triadic-blue: #4a568d;
+$jv-triadic-red: #8d4a56;
+
+// Monochromatic colors of #008000 green
+$jv-mono-green-0: #051400;
+$jv-mono-green-1: #0b2d00;
+$jv-mono-green-2: #114700;
+$jv-mono-green-3: #176000;
+$jv-mono-green-4: #1d7a00;
+$jv-mono-green-5: #239300;
+$jv-mono-green-complementary: #814a8d;
+
 // Palette green
 $jv-palette-green-50: #52bf90;
 $jv-palette-green-60: #49ab81;
 $jv-palette-green-70: #419873;
 $jv-palette-green-80: #398564;
 $jv-palette-green-90: #317256;
+
+// Neons
+$jv-green-neon: #33e512;
+$jv-red-neon: #ff0101;
+
+// jv font sizes
+$jv-font-small: 14px;
+$jv-font-medium: 16px;
+$jv-font-large: 18px;
+
+// constants
+$jv-working-space: 1269px;
 
 // jv color palette
 $jv-background-beige: #e1d7c8;
@@ -37,19 +95,15 @@ $jv-gray-nav: #f6f6f6;
 $jv-gray-title: #f6f8fa;
 $jv-gray-borders: #d1d3d4;
 $jv-green-borders: #9cbb62;
-$jv-green-light-terminal: #32CD32;
+$jv-green-light-terminal: #32cd32;
 $jv-blue-links: #156b88;
 $jv-green-links: #7b9150;
+$jv-ruby: #c02f1d;
 
-// jv font sizes
-$jv-font-small: 14px;
-$jv-font-medium: 16px;
-$jv-font-large: 18px;
-
-// constants
-$jv-working-space: 1269px;
-
-// kind colors
-$jv-kind-text: #47474F;
-$jv-kind-smaller-text: #333333;
-$jv-updates-green: #1e443e;
+// Colors palette currently using
+$jv-kind-text: $jv-palette-black-30;
+$jv-kinder-text: $jv-palette-black-10;
+$jv-kind-smaller-text: $jv-palette-black-80;
+$jv-updates-green: $jv-mono-green-2;
+$jv-links-in-page: $jv-ruby;
+$jv-links-hover: $jv-ruby;
